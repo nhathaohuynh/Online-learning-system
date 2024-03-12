@@ -1,0 +1,35 @@
+[2024-03-03 02-20-10.401]-error-	400 - Password must be at least 6 characters long
+[2024-03-03 04-01-13.381]-error-	400 - Expected number, received string
+[2024-03-03 04-01-50.719]-error-	400 - Password must be at least 6 characters long
+[2024-03-03 04-02-05.699]-info-	201 - Please check your email to activate account!
+[2024-03-03 04-03-14.641]-error-	400 - Invalid activation code
+[2024-03-03 04-04-04.539]-error-	400 - Invalid activation code
+[2024-03-03 04-07-55.000]-info-	201 - Please check your email to activate account!
+[2024-03-03 04-08-25.611]-error-	400 - Invalid activation code
+[2024-03-03 04-16-54.939]-info-	201 - Please check your email to activate account!
+[2024-03-03 04-17-20.668]-info-	200 - Active account successful
+[2024-03-03 07-00-49.480]-info-	201 - Please check your email to activate account!
+[2024-03-03 07-01-45.876]-info-	200 - Active account successful
+[2024-03-03 07-02-17.636]-info-	201 - Please check your email to activate account!
+[2024-03-03 07-09-12.564]-info-	201 - Please check your email to activate account!
+[2024-03-03 07-17-49.086]-info-	201 - Please check your email to activate account!
+[2024-03-03 10-44-34.274]-error-	400 - Invalid email or password
+[2024-03-03 10-49-27.286]-info-	201 - Please check your email to activate account!
+[2024-03-03 10-49-51.876]-info-	200 - Active account successful
+[2024-03-03 10-50-30.581]-info-	200 - Active account successful
+[2024-03-03 10-50-43.873]-info-	200 - Login successful
+[2024-03-03 10-53-54.636]-info-	200 - Login successful
+[2024-03-03 10-57-37.029]-info-	200 - Login successful
+[2024-03-03 11-01-47.600]-info-	200 - Login successful
+[2024-03-03 11-02-55.460]-info-	200 - Login successful
+[2024-03-03 11-03-37.011]-info-	200 - Login successful
+[2024-03-03 11-04-09.440]-info-	200 - Login successful
+[2024-03-03 11-04-36.761]-info-	200 - Login successful
+[2024-03-03 11-08-24.795]-info-	200 - Login successful
+[2024-03-03 11-10-29.388]-info-	200 - Login successful
+[2024-03-03 11-10-54.737]-info-	200 - Login successful
+[2024-03-03 11-15-41.173]-info-	200 - Login successful
+[2024-03-03 11-22-08.945]-info-	200 - Login successful
+[2024-03-03 11-23-22.433]-info-	200 - Login successful
+[2024-03-03 11-24-14.189]-info-	200 - Login successful
+[2024-03-03 11-28-13.631]-info-	200 - Login successful

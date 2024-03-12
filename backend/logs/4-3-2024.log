@@ -1,0 +1,90 @@
+[2024-03-04 12-31-05.857]-info-	200 - Login successful
+[2024-03-04 12-37-12.775]-info-	200 - Login successful
+[2024-03-04 12-39-51.574]-info-	200 - Login successful
+[2024-03-04 12-48-18.676]-info-	200 - Login successful
+[2024-03-04 12-48-48.047]-error-	400 - Invalid email or password
+[2024-03-04 12-50-09.927]-error-	400 - Invalid email or password
+[2024-03-04 12-51-35.786]-info-	200 - Logout success
+[2024-03-04 12-53-18.146]-info-	200 - Login successful
+[2024-03-04 12-53-28.818]-info-	200 - Logout success
+[2024-03-04 12-54-00.656]-info-	200 - Logout success
+[2024-03-04 12-56-01.326]-info-	200 - Login successful
+[2024-03-04 12-56-09.681]-info-	200 - Logout success
+[2024-03-04 12-56-56.771]-info-	200 - Logout success
+[2024-03-04 12-57-19.923]-error-	401 - Please login to access recourse.
+[2024-03-04 12-58-23.358]-info-	200 - Login successful
+[2024-03-04 12-59-03.193]-info-	200 - Login successful
+[2024-03-04 01-01-20.389]-info-	200 - Login successful
+[2024-03-04 01-13-30.180]-info-	200 - Login successful
+[2024-03-04 01-15-24.645]-info-	200 - Login successful
+[2024-03-04 01-15-49.240]-error-	401 - Please login to access recourse 1.
+[2024-03-04 01-17-05.930]-info-	200 - Login successful
+[2024-03-04 01-17-11.184]-error-	401 - Please login to access recourse 1.
+[2024-03-04 01-21-56.207]-info-	200 - Login successful
+[2024-03-04 01-22-12.503]-info-	200 - Login successful
+[2024-03-04 01-27-35.897]-info-	200 - Login successful
+[2024-03-04 01-32-41.105]-error-	401 - Please login to access recourse 1.
+[2024-03-04 01-33-27.293]-info-	200 - Login successful
+[2024-03-04 01-36-46.072]-info-	200 - Login successful
+[2024-03-04 01-36-57.419]-info-	200 - Login successful
+[2024-03-04 01-37-04.940]-info-	200 - Logout success
+[2024-03-04 09-26-48.471]-info-	200 - Login successful
+[2024-03-04 09-27-03.675]-error-	401 - Not allowed to access resource!
+[2024-03-04 09-27-58.694]-error-	401 - Not allowed to access resource!
+[2024-03-04 10-40-17.545]-info-	200 - OK
+[2024-03-04 10-40-45.410]-info-	200 - OK
+[2024-03-04 10-41-02.653]-info-	200 - OK
+[2024-03-04 10-42-19.815]-error-	401 - Please provide client id to access resource.
+[2024-03-04 10-43-02.628]-error-	400 - Can not authorized user.
+[2024-03-04 10-43-02.640]-error-	400 - Can not authorized user.
+[2024-03-04 10-43-02.641]-info-	200 - OK
+[2024-03-04 10-47-37.641]-info-	200 - OK
+[2024-03-04 10-47-42.922]-error-	400 - Can not authorized user.
+[2024-03-04 10-47-42.924]-error-	400 - Can not authorized user.
+[2024-03-04 10-48-28.874]-error-	400 - Can not authorized user.
+[2024-03-04 10-48-28.881]-error-	400 - Can not authorized user.
+[2024-03-04 10-50-50.130]-error-	400 - Cast to embedded failed for value "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWU0OWMwNDI3M2M3Nzc1ZTI3ZmMxZTYiLCJpYXQiOjE3MDk1MjQwNTcsImV4cCI6MTcxMDEyODg1N30.323sxw9f6abRJCOuKcsrWtskM2Nx9-B9bMd9AettGpo" (type string) at path "refreshTokenUsage" because of "ObjectParameterError"
+[2024-03-04 10-56-43.259]-info-	200 - OK
+[2024-03-04 11-07-56.484]-info-	200 - OK
+[2024-03-04 11-15-53.496]-info-	200 - OK
+[2024-03-04 11-16-04.283]-info-	200 - OK
+[2024-03-04 11-16-14.039]-info-	200 - OK
+[2024-03-04 11-18-17.266]-error-	400 - Can not authorized user.
+[2024-03-04 11-19-05.703]-info-	200 - OK
+[2024-03-04 11-19-24.268]-info-	200 - OK
+[2024-03-04 11-27-11.028]-info-	201 - Please check your email to activate account!
+[2024-03-04 11-28-43.505]-info-	200 - OK
+[2024-03-04 11-29-04.860]-info-	200 - OK
+[2024-03-04 11-31-17.754]-info-	200 - OK
+[2024-03-04 11-34-45.678]-info-	200 - OK
+[2024-03-04 11-39-16.365]-info-	200 - OK
+[2024-03-04 11-40-09.571]-info-	200 - OK
+[2024-03-04 11-40-31.449]-info-	200 - OK
+[2024-03-04 11-49-17.019]-info-	200 - OK
+[2024-03-04 11-51-06.748]-info-	200 - OK
+[2024-03-04 11-51-39.791]-info-	200 - OK
+[2024-03-04 11-52-26.088]-info-	200 - OK
+[2024-03-04 11-52-36.106]-info-	200 - OK
+[2024-03-04 07-43-30.444]-info-	200 - OK
+[2024-03-04 08-25-47.373]-info-	200 - OK
+[2024-03-04 08-45-15.529]-info-	200 - OK
+[2024-03-04 08-47-28.674]-info-	200 - OK
+[2024-03-04 08-50-15.080]-error-	400 - Email already existed.
+[2024-03-04 08-50-24.767]-error-	401 - Please login to access recourse.
+[2024-03-04 08-50-40.817]-info-	200 - OK
+[2024-03-04 08-50-48.789]-info-	200 - OK
+[2024-03-04 08-52-48.088]-error-	400 - Invalid email
+[2024-03-04 08-52-57.003]-error-	400 - Invalid email
+[2024-03-04 08-53-11.941]-error-	400 - Invalid email
+[2024-03-04 08-53-32.263]-info-	200 - OK
+[2024-03-04 08-54-06.004]-info-	200 - OK
+[2024-03-04 09-34-08.081]-error-	401 - Please login to access recourse.
+[2024-03-04 09-34-14.307]-info-	200 - OK
+[2024-03-04 09-34-18.424]-info-	200 - OK
+[2024-03-04 09-43-41.636]-error-	401 - Please login to access recourse.
+[2024-03-04 09-43-46.685]-info-	200 - OK
+[2024-03-04 09-47-25.609]-error-	400 - Invalid old password.
+[2024-03-04 09-47-39.606]-error-	400 - Password must be at least 6 characters long
+[2024-03-04 09-48-20.434]-info-	200 - OK
+[2024-03-04 09-48-25.740]-error-	400 - Invalid email or password
+[2024-03-04 09-48-39.383]-error-	400 - Invalid email or password

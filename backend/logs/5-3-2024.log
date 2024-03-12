@@ -1,0 +1,27 @@
+[2024-03-05 06-59-50.040]-error-	POST - /api/v1/OnlineLS/user/login - 400 - Invalid email or password
+[2024-03-05 07-01-52.134]-error:	POST - /api/v1/OnlineLS/user/login - 400 - Invalid email or password
+[2024-03-05 07-21-43.027]-info:	200 - OK
+[2024-03-05 07-23-38.692]-info:	200 - OK
+[2024-03-05 06-42-20.530]-error:	PUT - /api/v1/OnlineLS/user/update-avatar - 401 - Please login to access recourse.
+[2024-03-05 06-42-41.149]-info:	200 - OK
+[2024-03-05 06-42-50.406]-error:	PUT - /api/v1/OnlineLS/user/update-avatar - 500 - User validation failed: undefined: Cannot read properties of undefined (reading 'options')
+[2024-03-05 06-47-21.558]-error:	PUT - /api/v1/OnlineLS/user/update-avatar - 500 - User validation failed: undefined: Cannot read properties of undefined (reading 'options')
+[2024-03-05 06-50-20.675]-error:	PUT - /api/v1/OnlineLS/user/update-avatar - 401 - Please login to access recourse.
+[2024-03-05 06-50-33.613]-info:	200 - OK
+[2024-03-05 06-50-41.353]-error:	PUT - /api/v1/OnlineLS/user/update-avatar - 500 - User validation failed: undefined: Cannot read properties of undefined (reading 'options')
+[2024-03-05 06-51-54.620]-error:	PUT - /api/v1/OnlineLS/user/update-avatar - 500 - User validation failed: undefined: Cannot read properties of undefined (reading 'options')
+[2024-03-05 07-04-42.642]-info:	200 - OK
+[2024-03-05 07-04-49.324]-info:	200 - OK
+[2024-03-05 11-47-28.306]-info:	200 - OK
+[2024-03-05 11-47-38.954]-error:	POST - /api/v1/OnlineLS/course - 401 - Not allowed to access resource!
+[2024-03-05 11-48-24.341]-error:	POST - /api/v1/OnlineLS/course - 401 - Not allowed to access resource!
+[2024-03-05 11-48-35.225]-error:	POST - /api/v1/OnlineLS/user/login - 500 - user.comparePassword is not a function
+[2024-03-05 11-48-40.960]-info:	200 - OK
+[2024-03-05 11-48-53.496]-error:	POST - /api/v1/OnlineLS/course - 401 - Not allowed to access resource!
+[2024-03-05 11-51-59.555]-error:	POST - /api/v1/OnlineLS/user/login - 500 - user.comparePassword is not a function
+[2024-03-05 11-54-09.432]-info:	200 - OK
+[2024-03-05 11-54-18.004]-info:	201 - Created
+[2024-03-05 11-54-18.009]-error:	POST - /api/v1/OnlineLS/course - 400 - DataCourse validation failed: links.0.url: Path `url` is required.
+[2024-03-05 11-59-34.759]-error:	POST - /api/v1/OnlineLS/course - 401 - Please login to access recourse.
+[2024-03-05 11-59-41.595]-info:	200 - OK
+[2024-03-05 11-59-50.180]-error:	POST - /api/v1/OnlineLS/course - 500 - Course validation failed: benefits.0: Cast to [string] failed for value "[ { title: 'a' } ]" (type string) at path "benefits.0" because of "CastError", prerequisites.0: Cast to [string] failed for value "[ { title: 'b' } ]" (type string) at path "prerequisites.0" because of "CastError"

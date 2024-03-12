@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .message-sm {
+            background-color: rgb(102, 0, 255);
+            /* Changed background color to purple */
+            color: white;
+            /* Changed text color to white for better readability */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .course-info {
+            margin-top: 40px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .first-td {
+            width: 50%;
+        }
+
+        .second-td {
+            width: 30%;
+        }
+
+        .third-td {
+            width: 20%;
+        }
+
+        .total-amount {
+            margin-top: 20px;
+            text-align: right;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="message-sm">
+            <h1>Your ELearning order is confirmed!</h1>
+            <p>And we're just as excited as you are.</p>
+        </div>
+        <div class="course-info">
+            <h4>Here's what you ordered:</h4>
+            <table>
+                <tr>
+                    <th>Order #</th>
+                    <td>
+                        <%= order._id %>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Order Date</th>
+                    <td>
+                        <%= order.date %>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                    <th class="first-td">Item</th>
+                    <th class="second-td">Qty</th>
+                    <th class="third-td">Cost</th>
+                </tr>
+                <tr>
+                    <td class="first-td">
+                        <%= order.name %>
+                    </td>
+                    <td class="second-td">1</td>
+                    <td class="third-td">$<%= order.price %>
+                    </td>
+                </tr>
+            </table>
+            <div class="total-amount">
+                Total Amount: $<%= order.price %>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

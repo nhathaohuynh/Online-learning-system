@@ -1,0 +1,79 @@
+[2024-03-06 12-04-08.668]-info:	201 - Created
+[2024-03-06 12-06-39.215]-error:	POST - /api/v1/OnlineLS/course - 401 - Please login to access recourse.
+[2024-03-06 12-06-46.809]-info:	200 - OK
+[2024-03-06 12-06-53.364]-info:	201 - Created
+[2024-03-06 12-08-21.136]-info:	201 - Created
+[2024-03-06 12-10-26.831]-info:	201 - Created
+[2024-03-06 08-50-13.626]-error:	POST - /api/v1/OnlineLS/course - 401 - Please login to access recourse.
+[2024-03-06 08-50-42.796]-info:	200 - OK
+[2024-03-06 08-50-54.011]-info:	201 - Created
+[2024-03-06 09-24-27.692]-info:	200 - OK
+[2024-03-06 09-24-42.804]-info:	200 - OK
+[2024-03-06 09-40-27.334]-info:	200 - OK
+[2024-03-06 09-40-38.888]-error:	PUT - /api/v1/OnlineLS/course/: - 404 - Page not found
+[2024-03-06 09-41-07.370]-error:	PUT - /api/v1/OnlineLS/course/: - 404 - Page not found
+[2024-03-06 09-42-40.152]-error:	PUT - /api/v1/OnlineLS/course/:65e7cbfdc1d4b55a8491abe6 - 500 - Cast to ObjectId failed for value ":65e7cbfdc1d4b55a8491abe6" (type string) at path "_id" for model "Course"
+[2024-03-06 09-43-05.261]-info:	200 - OK
+[2024-03-06 09-43-05.279]-error:	PUT - /api/v1/OnlineLS/course/65e7cbfdc1d4b55a8491abe6 - 400 - Cast to ObjectId failed for value "https://images.unsplash.com/photo-1682685797898-6d7587974771?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8" (type string) at path "thumbnail" because of "BSONError"
+[2024-03-06 09-44-24.345]-info:	200 - OK
+[2024-03-06 09-44-24.390]-error:	PUT - /api/v1/OnlineLS/course/65e7cbfdc1d4b55a8491abe6 - 400 - Cast to ObjectId failed for value "https://images.unsplash.com/photo-1682685797898-6d7587974771?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8" (type string) at path "thumbnail" because of "BSONError"
+[2024-03-06 09-49-31.746]-error:	PUT - /api/v1/OnlineLS/course/65e7cbfdc1d4b55a8491abe6 - 401 - Please login to access recourse.
+[2024-03-06 09-49-36.240]-info:	200 - OK
+[2024-03-06 09-49-41.511]-error:	PUT - /api/v1/OnlineLS/course/65e7cbfdc1d4b55a8491abe6 - 400 - Cast to ObjectId failed for value "https://images.unsplash.com/photo-1682685797898-6d7587974771?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8" (type string) at path "thumbnail" because of "BSONError"
+[2024-03-06 09-57-04.544]-error:	PUT - /api/v1/OnlineLS/course/65e7cbfdc1d4b55a8491abe6 - 401 - Please login to access recourse.
+[2024-03-06 09-57-08.677]-info:	200 - OK
+[2024-03-06 09-57-14.257]-error:	PUT - /api/v1/OnlineLS/course/65e7cbfdc1d4b55a8491abe6 - 400 - Cast to ObjectId failed for value "OLS/shnexsypezyq7ioxzjhu" (type string) at path "_id" for model "Picture"
+[2024-03-06 09-59-25.297]-info:	200 - OK
+[2024-03-06 09-59-25.318]-error:	PUT - /api/v1/OnlineLS/course/65e7cbfdc1d4b55a8491abe6 - 400 - Cast to ObjectId failed for value "https://images.unsplash.com/photo-1682685797898-6d7587974771?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8" (type string) at path "thumbnail" because of "BSONError"
+[2024-03-06 10-02-47.496]-error:	PUT - /api/v1/OnlineLS/course/65e7cbfdc1d4b55a8491abe6 - 401 - Please login to access recourse.
+[2024-03-06 10-02-51.936]-info:	200 - OK
+[2024-03-06 10-03-00.240]-info:	200 - OK
+[2024-03-06 10-17-53.354]-error:	PUT - /api/v1/OnlineLS/course/65e7cbfdc1d4b55a8491abe6 - 401 - Please login to access recourse.
+[2024-03-06 10-17-59.344]-info:	200 - OK
+[2024-03-06 10-18-15.151]-error:	PUT - /api/v1/OnlineLS/course/65e7cbfdc1d4b55a8491abe6 - 400 - Cast to ObjectId failed for value "https://images.unsplash.com/photo-1682685797898-6d7587974771?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8" (type string) at path "thumbnail" because of "BSONError"
+[2024-03-06 10-19-19.039]-info:	200 - OK
+[2024-03-06 10-19-19.059]-error:	PUT - /api/v1/OnlineLS/course/65e7cbfdc1d4b55a8491abe6 - 400 - Cast to ObjectId failed for value "https://images.unsplash.com/photo-1682685797898-6d7587974771?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8" (type string) at path "thumbnail" because of "BSONError"
+[2024-03-06 10-19-32.147]-info:	200 - OK
+[2024-03-06 10-19-32.153]-error:	PUT - /api/v1/OnlineLS/course/65e7cbfdc1d4b55a8491abe6 - 400 - Cast to ObjectId failed for value "https://images.unsplash.com/photo-1682685797898-6d7587974771?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8" (type string) at path "thumbnail" because of "BSONError"
+[2024-03-06 10-20-09.146]-info:	200 - OK
+[2024-03-06 10-20-09.166]-error:	PUT - /api/v1/OnlineLS/course/65e7cbfdc1d4b55a8491abe6 - 400 - Cast to ObjectId failed for value "https://images.unsplash.com/photo-1682685797898-6d7587974771?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8" (type string) at path "thumbnail" because of "BSONError"
+[2024-03-06 10-21-56.676]-info:	200 - OK
+[2024-03-06 10-21-56.697]-error:	PUT - /api/v1/OnlineLS/course/65e7cbfdc1d4b55a8491abe6 - 400 - Cast to ObjectId failed for value "https://images.unsplash.com/photo-1682685797898-6d7587974771?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8" (type string) at path "thumbnail" because of "BSONError"
+[2024-03-06 10-23-00.873]-info:	200 - OK
+[2024-03-06 10-23-00.894]-error:	PUT - /api/v1/OnlineLS/course/65e7cbfdc1d4b55a8491abe6 - 400 - Cast to ObjectId failed for value "https://images.unsplash.com/photo-1682685797898-6d7587974771?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8" (type string) at path "thumbnail" because of "BSONError"
+[2024-03-06 10-23-48.407]-error:	PUT - /api/v1/OnlineLS/course/65e7cbfdc1d4b55a8491abe6 - 401 - Please login to access recourse.
+[2024-03-06 10-23-52.721]-info:	200 - OK
+[2024-03-06 10-23-58.095]-error:	PUT - /api/v1/OnlineLS/course/65e7cbfdc1d4b55a8491abe6 - 400 - Cast to ObjectId failed for value "https://images.unsplash.com/photo-1682685797898-6d7587974771?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8" (type string) at path "thumbnail" because of "BSONError"
+[2024-03-06 10-24-50.212]-error:	PUT - /api/v1/OnlineLS/course/65e7cbfdc1d4b55a8491abe6 - 400 - Cast to ObjectId failed for value "https://images.unsplash.com/photo-1682685797898-6d7587974771?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8" (type string) at path "thumbnail" because of "BSONError"
+[2024-03-06 10-25-40.584]-error:	PUT - /api/v1/OnlineLS/course/65e7cbfdc1d4b55a8491abe6 - 400 - Cast to ObjectId failed for value "https://images.unsplash.com/photo-1682685797898-6d7587974771?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8" (type string) at path "thumbnail" because of "BSONError"
+[2024-03-06 10-54-43.239]-error:	PUT - /api/v1/OnlineLS/data-course/65e7cbfdc1d4b55a8491abe7 - 401 - Please login to access recourse.
+[2024-03-06 10-54-49.305]-info:	200 - OK
+[2024-03-06 10-55-00.274]-info:	200 - OK
+[2024-03-06 11-54-23.561]-error:	GET - /api/v1/OnlineLS/course/65e7cbfdc1d4b55a8491abe6 - 400 - Expected string, received object
+[2024-03-06 11-55-54.701]-error:	GET - /api/v1/OnlineLS/course/65e7cbfdc1d4b55a8491abe6 - 400 - Required
+[2024-03-06 11-56-38.197]-info:	201 - Created
+[2024-03-06 12-10-42.363]-info:	201 - Created
+[2024-03-06 12-10-58.835]-info:	201 - Created
+[2024-03-06 02-11-32.704]-info:	200 - OK
+[2024-03-06 02-11-40.739]-info:	200 - OK
+[2024-03-06 02-13-25.185]-error:	GET - /api/v1/OnlineLS/course/valid-user/65e7cbfdc1d4b55a8491abe6 - 400 - You don't  belongs to this course.
+[2024-03-06 02-19-04.783]-error:	PUT - /api/v1/OnlineLS/user - 401 - Please login to access recourse.
+[2024-03-06 02-19-10.107]-info:	200 - OK
+[2024-03-06 02-19-15.327]-error:	PUT - /api/v1/OnlineLS/user - 400 - Email already existed.
+[2024-03-06 02-19-36.290]-error:	PUT - /api/v1/OnlineLS/user - 500 - user.save is not a function
+[2024-03-06 02-20-26.509]-info:	200 - OK
+[2024-03-06 02-22-53.670]-error:	PUT - /api/v1/OnlineLS/user - 400 - Email already existed.
+[2024-03-06 02-23-10.664]-info:	200 - OK
+[2024-03-06 02-23-20.433]-info:	200 - OK
+[2024-03-06 05-20-22.466]-info:	200 - OK
+[2024-03-06 05-20-45.342]-info:	201 - Created
+[2024-03-06 05-28-43.676]-error:	POST - /api/v1/OnlineLS/question - 401 - Please login to access recourse.
+[2024-03-06 05-28-48.946]-info:	200 - OK
+[2024-03-06 05-28-52.088]-error:	POST - /api/v1/OnlineLS/question - 400 - Required
+[2024-03-06 05-29-57.501]-info:	201 - Created
+[2024-03-06 08-21-03.708]-error:	POST - /api/v1/OnlineLS/question - 401 - Please login to access recourse.
+[2024-03-06 08-21-10.671]-info:	200 - OK
+[2024-03-06 08-21-17.077]-info:	201 - Created
+[2024-03-06 08-42-32.079]-error:	POST - /api/v1/OnlineLS/question/replying - 401 - Please login to access recourse.
+[2024-03-06 08-42-36.626]-info:	200 - OK
+[2024-03-06 08-42-41.772]-info:	201 - Created
