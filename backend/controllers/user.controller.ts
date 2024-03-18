@@ -107,7 +107,13 @@ class UserController {
 
 	async handleBlockUser(req: Request, res: Response, next: NextFunction) {
 		return new OkResponse({
-			metaData: await userService.handleBlockUser(req.params._id),
+			metaData: await userService.handleBlockUser(req.params.id),
+		}).send(res)
+	}
+
+	async handleUpdateRole(req: Request, res: Response, next: NextFunction) {
+		return new OkResponse({
+			metaData: await userService.handleUpdateRole(req.body),
 		}).send(res)
 	}
 }

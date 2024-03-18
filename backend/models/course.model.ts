@@ -1,4 +1,4 @@
-import mongoose, { Document, Model, Schema } from 'mongoose'
+import mongoose, { Document, Model, Query, Schema } from 'mongoose'
 import { IPicture } from './picture.model'
 import { IReview } from './review.model'
 
@@ -21,6 +21,7 @@ export interface ICourse extends Document {
 	dataCourse: [Schema.Types.ObjectId]
 	ratings?: number
 	purchased?: number
+	deleteAt: Date
 }
 
 const courseSchema: Schema<ICourse> = new mongoose.Schema<ICourse>(
@@ -101,12 +102,22 @@ const courseSchema: Schema<ICourse> = new mongoose.Schema<ICourse>(
 			type: Number,
 			default: 0,
 		},
+		deleteAt: {
+			type: Date,
+			default: null,
+		},
 	},
 	{
 		timestamps: true,
 		collection: COLLECTION_NAME,
 	},
 )
+
+// want to filter out the deleted course
+courseSchema.pre<Query<any, ICourse>>(/^find/, function (next) {
+	this.find({ deleteAt: null })
+	next()
+})
 
 const courseModel: Model<ICourse> = mongoose.model<ICourse>(
 	DOCUMENT_NAME,

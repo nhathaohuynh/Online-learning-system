@@ -19,6 +19,7 @@ import {
 } from '../utils/generateJWT'
 import {
 	IActivationToken,
+	IBodyUpdateRole,
 	ILoginBody,
 	IRegistrationBody,
 	ITokenOptions,
@@ -330,6 +331,21 @@ class UserService {
 
 		return {
 			userId: userBlockId,
+		}
+	}
+
+	async handleUpdateRole(body: IBodyUpdateRole) {
+		const { userId, role } = body
+		const user = await findUserById(userId)
+
+		if (!user) throw new BadRequest('Occuring with updating role.')
+
+		user.role = role
+
+		await user.save()
+
+		return {
+			userId,
 		}
 	}
 }

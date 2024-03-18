@@ -1,0 +1,1198 @@
+{
+	"info": {
+		"_postman_id": "31e2c3f4-bdb0-43d8-a72a-85a0fb7ecf03",
+		"name": "OLS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28847873"
+	},
+	"item": [
+		{
+			"name": "Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"septan1112@gmail.com\",\r\n    \"name\": \"Pham Phuoc Tan\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"huynhnhathao0609@gmail.com\",\r\n    \"password\": \"121212\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin - create new course",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e54d9c3f11d722cf622912",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"PERN Stack Development Bootcamp\",\r\n  \"description\": \"Master the powerful MERN stack (MongoDB, Express.js, React.js, Node.js) and build full-stack web applications with confidence.\",\r\n  \"price\": 5000,\r\n  \"thumbnail\": \"https://images.unsplash.com/photo-1708806016675-dac47ebc8459?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8fA%3D%3D\",\r\n  \"tags\": \"#mernstack,#webdevelopment,#fullstack\",\r\n  \"level\": \"intermediate\",\r\n  \"demoUrl\": \"https://mern-stack-demo.com\",\r\n  \"benefits\": [\r\n    { \"title\": \"Become a full-stack developer\" },\r\n    { \"title\": \"Build real-world web applications\" },\r\n    { \"title\": \"Learn in-demand skills\" }\r\n  ],\r\n  \"prerequisites\": [\r\n    { \"title\": \"Basic understanding of JavaScript\" },\r\n    { \"title\": \"Familiarity with HTML and CSS\" }\r\n  ],\r\n  \"dataCourse\": [\r\n    {\r\n      \"title\": \"Module 1: Introduction to MERN Stack\",\r\n      \"description\": \"Get an overview of the MERN stack components and how they work together.\",\r\n      \"videoUrl\": \"https://www.youtube.com/watch?v=123abc\",\r\n      \"videoSection\": \"Introduction\",\r\n      \"videoLength\": 15,\r\n      \"links\": [\r\n        {\r\n          \"title\": \"MERN Stack Documentation\",\r\n          \"url\": \"https://www.mongodb.com/languages/mern-stack-tutorial\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"title\": \"Module 2: Setting Up the Development Environment\",\r\n      \"description\": \"Install Node.js, MongoDB, and code editors to start building your MERN application.\",\r\n      \"videoUrl\": \"https://www.youtube.com/watch?v=456def\",\r\n      \"videoSection\": \"Setup\",\r\n      \"videoLength\": 20,\r\n      \"links\": [\r\n        {\r\n          \"title\": \"Node.js Download\",\r\n          \"url\": \"https://nodejs.org/en/download\"\r\n        },\r\n        {\r\n          \"title\": \"MongoDB Download\",\r\n          \"url\": \"https://www.mongodb.com/try/download/community\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"title\": \"Module 3: Building a Simple MERN Application\",\r\n      \"description\": \"Create a basic CRUD (Create, Read, Update, Delete) application using MongoDB, Express.js, React.js, and Node.js.\",\r\n      \"videoUrl\": \"https://www.youtube.com/watch?v=789ghi\",\r\n      \"videoSection\": \"Hands-on\",\r\n      \"videoLength\": 45,\r\n      \"links\": []\r\n    }\r\n  ]\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/course",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User - review",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e9a87bdcdcd4e7252d1b81",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rating\": \"4\", \r\n    \"courseId\": \"65e8437d00b7c93f3afc3d6d\",\r\n    \"comment\": \"good course\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/review",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"review"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User - order course",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e9a87bdcdcd4e7252d1b81",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"courseId\": \"65e8437d00b7c93f3afc3d6d\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User - ask question Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e54d9c3f11d722cf622912",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"Why me me learning this course\", \r\n    \"dataCourseId\": \"65e8437d00b7c93f3afc3d6e\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/question/asking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"question",
+						"asking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User -  Admin- replying question",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e9a87bdcdcd4e7252d1b81",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"You achieve new knowledge\", \r\n    \"dataCourseId\": \"65e8437d00b7c93f3afc3d6e\",\r\n    \"questionId\": \"65e86dcd01dfba2ec4981d3b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/question/replying",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"question",
+						"replying"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin- layout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e9a87bdcdcd4e7252d1b81",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"You achieve new knowledge\", \r\n    \"dataCourseId\": \"65e8437d00b7c93f3afc3d6e\",\r\n    \"questionId\": \"65e86dcd01dfba2ec4981d3b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/question/replying",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"question",
+						"replying"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Management - update course",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e54d9c3f11d722cf622912",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"MERN Stack Development Bootcamp of Huynh Nhat Hao\",\r\n  \"description\": \"Master the powerful MERN stack (MongoDB, Express.js, React.js, Node.js) and build full-stack web applications with confidence.\",\r\n  \"price\": 5000,\r\n  \"thumbnail\": \"https://images.unsplash.com/photo-1682685797898-6d7587974771?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8\",\r\n  \"tags\": \"#mernstack,#webdevelopment,#fullstack\",\r\n  \"level\": \"intermediate\",\r\n  \"demoUrl\": \"https://mern-stack-demo.com\",\r\n  \"benefits\": [\r\n    {\r\n      \"title\": \"Become a full-stack developer\"\r\n    },\r\n    {\r\n      \"title\": \"Build real-world web applications\"\r\n    },\r\n    {\r\n      \"title\": \"Learn in-demand skills\"\r\n    }\r\n  ],\r\n  \"prerequisites\": [\r\n    {\r\n      \"title\": \"Basic understanding of JavaScript\"\r\n    },\r\n    {\r\n      \"title\": \"Familiarity with HTML and CSS\"\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/course/65e7cbfdc1d4b55a8491abe6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"course",
+						"65e7cbfdc1d4b55a8491abe6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Management - make a read notification",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e54d9c3f11d722cf622912",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/notification/65eb1dcba028cf359ff65846",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"notification",
+						"65eb1dcba028cf359ff65846"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Management - update data course Copy",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e54d9c3f11d722cf622912",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n      \"title\": \"Module 2: Setting Up the Development Environment Huynh Nhat Hao\",\r\n      \"description\": \"Install Node.js, MongoDB, and code editors to start building your MERN application.\",\r\n      \"videoUrl\": \"https://www.youtube.com/watch?v=... (replace with actual video URL)\",\r\n      \"videoLength\": 10,\r\n      \"links\": [\r\n        {\r\n          \"title\": \"Node.js Download\",\r\n          \"url\": \"https://nodejs.org/en/download\"\r\n        },\r\n        {\r\n          \"title\": \"MongoDB Download\",\r\n          \"url\": \"https://www.mongodb.com/try/download/community\"\r\n        },        \r\n        {\r\n          \"title\": \"MongoDB Download\",\r\n          \"url\": \"https://www.mongodb.com/try/download/community\"\r\n        }\r\n      ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/data-course/65e7cbfdc1d4b55a8491abe7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"data-course",
+						"65e7cbfdc1d4b55a8491abe7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get single course",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e54d9c3f11d722cf622912",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/course/65e7cbfdc1d4b55a8491abe6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"course",
+						"65e7cbfdc1d4b55a8491abe6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get notifications",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e54d9c3f11d722cf622912",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/notification",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"notification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin - get users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e54d9c3f11d722cf622912",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin - get  orders",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e54d9c3f11d722cf622912",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User - get course valid user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e54d9c3f11d722cf622912",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/course/valid-user/65e7cbfdc1d4b55a8491abe6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"course",
+						"valid-user",
+						"65e7cbfdc1d4b55a8491abe6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin - get courses",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e54d9c3f11d722cf622912",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/course",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin - get users analytics",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e54d9c3f11d722cf622912",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/analytic/get-users-analytics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"analytic",
+						"get-users-analytics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin - get course analytics",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e54d9c3f11d722cf622912",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/analytic/get-courses-analytics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"analytic",
+						"get-courses-analytics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin - get orders analytics",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e54d9c3f11d722cf622912",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/analytic/get-orders-analytics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"analytic",
+						"get-orders-analytics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User - refresh token",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e54d9c3f11d722cf622912",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"huynhnhathao0609@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/user/refresh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"user",
+						"refresh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User - admin- get information",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e54d9c3f11d722cf622912",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"huynhnhathao0609@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Social  auth",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e49c04273c7775e27fc1e6",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"huynhnhathao0608@gmail.com\",\r\n    \"name\": \"Pham Phuoc Tan\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/user/social",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"user",
+						"social"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User - update user information",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e9a87bdcdcd4e7252d1b81",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"septan123@gmail.com\",\r\n    \"name\": \"Huynh Nhat Tinh\",\r\n    \"courses\": [{\"courseId\":\"65e8437d00b7c93f3afc3d6d\" }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User - update password",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e54d9c3f11d722cf622912",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"oldPassword\":\"123456\",\r\n    \"newPassword\": \"121212\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/user/change-password",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"user",
+						"change-password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User - update role",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e54d9c3f11d722cf622912",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"65e9a87bdcdcd4e7252d1b81\",\r\n    \"role\": \"0000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/user/update-role",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"user",
+						"update-role"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User - update avatar",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e54d9c3f11d722cf622912",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"avatar\":\"https://images.unsplash.com/photo-1520175480921-4edfa2983e0f?q=80&w=1767&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/user/update-avatar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"user",
+						"update-avatar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User - block user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e54d9c3f11d722cf622912",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"avatar\":\"https://images.unsplash.com/photo-1520175480921-4edfa2983e0f?q=80&w=1767&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/user/update-avatar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"user",
+						"update-avatar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e54d9c3f11d722cf622912",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/user/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"user",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin - delete course",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-client-id",
+						"value": "65e54d9c3f11d722cf622912",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/user/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"user",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Activation account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activationToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoic2VwdGFuMTExMkBnbWFpbC5jb20iLCJuYW1lIjoiUGhhbSBQaHVvYyBUYW4ifSwiYWN0aXZhdGlvbkNvZGUiOjc3NDgsImlhdCI6MTcwOTgxMTgzNSwiZXhwIjoxNzA5ODEyMTM1fQ.VhVcTTzTjikphsm4HRQvFh3adGYX_Oups_l2wDDpfPc\",\r\n    \"activationCode\":7748\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/OnlineLS/user/activate-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"OnlineLS",
+						"user",
+						"activate-user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

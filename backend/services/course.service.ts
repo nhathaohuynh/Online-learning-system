@@ -187,6 +187,22 @@ class CourseService {
 			courses,
 		}
 	}
+
+	async deleteCourse(courseId: string) {
+		// delete course
+		const rawCourse = await findCourseById(courseId)
+		if (!rawCourse) throw new BadRequest('Course does not exist.')
+
+		const deleteCourse = await findCourseByIdAndUpdate(courseId, {
+			deleteAt: new Date(),
+		})
+
+		if (!deleteCourse) throw new BadRequest('Delete course is failed.')
+
+		return {
+			courseId,
+		}
+	}
 }
 
 export default new CourseService()

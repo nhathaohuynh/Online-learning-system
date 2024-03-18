@@ -122,6 +122,7 @@ export interface IBodyUpdateCourse {
 	demoUrl?: string
 	benefits?: { title: string }[]
 	prerequisites?: { title: string }[]
+	deleteAt?: Date
 }
 
 export interface IBodyUpdateDataCourse {
@@ -154,4 +155,9 @@ export interface IBodyNotification {
 	userId: string
 	title: string
 	message: string
+}
+
+export interface IBodyUpdateRole {
+	userId: string
+	role: string
 }

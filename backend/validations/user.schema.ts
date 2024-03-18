@@ -67,3 +67,16 @@ export const updateAvatarSchema = z.object({
 		avatar: z.string(),
 	}),
 })
+
+export enum UserRole {
+	Admin = '1111',
+	User = '0000',
+	Teacher = '2222',
+}
+
+export const updateRoleSchema = z.object({
+	body: z.object({
+		userId: z.string(),
+		role: z.enum([UserRole.Admin, UserRole.User, UserRole.Teacher]),
+	}),
+})

@@ -8,6 +8,26 @@ import { reviewBodySchema } from '../validations/review.schema'
 
 const route = express.Router()
 
+/**
+ * Route for getting reviews.
+ *
+ * @swagger
+ * /api/v1/OnlineLS/review/get-reviews:
+ *   get:
+ *     summary: Get reviews.
+ *     tags:
+ *       - Review
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: OK
+ *       401:
+ *         description: Unauthorized
+ *       500:
+ *         description: Internal Server Error
+ */
+
 route.post(
 	'/',
 	isAuthenticated,
