@@ -140,10 +140,12 @@ class CourseService {
 		}
 	}
 
-	async getAllCourse() {
+	async getAllCourses() {
 		const excludeFields = '-suggestion -links -videoUrl -comments'
 
-		const isCacheExist = await redis.get('all-course')
+		const isCacheExist = await redis.get('allCourse')
+
+		console.log(isCacheExist)
 
 		if (isCacheExist) {
 			return {
@@ -152,7 +154,7 @@ class CourseService {
 		} else {
 			const rawCourse = await findAllCourseAndPopulate(excludeFields)
 
-			redis.set('all-course', JSON.stringify(rawCourse))
+			redis.set('allCourse', JSON.stringify(rawCourse))
 
 			return {
 				coursesInfo: rawCourse,
@@ -178,13 +180,6 @@ class CourseService {
 
 		return {
 			courseInfo: rawCourse,
-		}
-	}
-
-	async getAllCourses() {
-		const courses = await findAllCourse()
-		return {
-			courses,
 		}
 	}
 
