@@ -8,18 +8,20 @@ import {
 	FormMessage,
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
+import { useRegisterMutation } from '@/redux/queries/auth.api'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { LogIn } from 'lucide-react'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
+import toast from 'react-hot-toast'
 import { z } from 'zod'
+import Spinner from './Spinner'
 
 const formSchema = z
 	.object({
 		username: z
 			.string()
 			.min(3, { message: 'Username must contain at least 3 character(s)' })
-			.max(20, { message: 'Username must not exceed 20 character(s)' }),
+			.max(100, { message: 'Username must not exceed 100 character(s)' }),
 		email: z.string().email(),
 		password: z
 			.string()
@@ -35,7 +37,8 @@ const formSchema = z
 		path: ['confirmPassword'],
 	})
 
-const RegisterForm = () => {
+const RegisterForm = ({ setTypeModel }) => {
+	const [regsiter, { error, isLoading, isSuccess }] = useRegisterMutation()
 	const form = useForm({
 		resolver: zodResolver(formSchema),
 		defaultValues: {
@@ -45,9 +48,28 @@ const RegisterForm = () => {
 			confirmPassword: '',
 		},
 	})
-	function onSubmit(values) {
-		console.log(values)
+	async function onSubmit(values) {
+		const data = {
+			name: values.username,
+			email: values.email,
+			password: values.password,
+		}
+
+		await regsiter(data)
 	}
+
+	useEffect(() => {
+		if (isSuccess) {
+			const message = 'Please check your email for verification code'
+			toast.success(message)
+			setTypeModel('verification')
+		}
+
+		if (error) {
+			const message = error?.data?.message || 'Something went wrong'
+			toast.error(message)
+		}
+	}, [isSuccess, error])
 	return (
 		<Form {...form} className='w-full h-full'>
 			<form
@@ -62,7 +84,7 @@ const RegisterForm = () => {
 							<FormLabel>Username *</FormLabel>
 							<FormControl>
 								<Input
-									placeholder='your name'
+									placeholder='Your name'
 									{...field}
 									className='outline-none focus-visible:to-blue-500'
 								/>
@@ -128,9 +150,12 @@ const RegisterForm = () => {
 				/>
 				<Button
 					type='submit'
-					className='w-full bg-primary flex gap-2 items-center'
+					className={`w-full bg-primary flex gap-2 items-center ${
+						isLoading ? 'cursor-not-allowed' : ''
+					}`}
+					disabled={isLoading}
 				>
-					Register
+					{isLoading ? <Spinner /> : 'Register'}
 				</Button>
 			</form>
 		</Form>

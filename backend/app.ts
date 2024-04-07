@@ -9,6 +9,7 @@ import { env } from './config/env.config'
 import notFound from './middlewares/NotFound'
 import errorHandler from './middlewares/errorHandler'
 import { components } from './swaggerComponents'
+
 import db from './utils/db'
 
 export const app = express()
@@ -41,6 +42,7 @@ app.use(cookieParser())
 app.use(
 	cors({
 		origin: env.ORIGIN,
+		credentials: true,
 	}),
 )
 

@@ -44,11 +44,14 @@ export const updateUserInfoSchema = z.object({
 			.min(3, 'Name must be at least 3 character long')
 			.optional(),
 		email: z.string().email().optional(),
-		courses: z.array(
-			z.object({
-				courseId: z.string(),
-			}),
-		),
+		courses: z
+			.array(
+				z.object({
+					courseId: z.string(),
+				}),
+			)
+			.optional()
+			.default([]),
 	}),
 })
 
@@ -64,7 +67,7 @@ export const updatePasswordSchema = z.object({
 
 export const updateAvatarSchema = z.object({
 	body: z.object({
-		avatar: z.string(),
+		avatar: z.string().optional(),
 	}),
 })
 

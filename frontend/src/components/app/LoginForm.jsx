@@ -2,18 +2,20 @@ import { Button } from '@/components/ui/button'
 import {
 	Form,
 	FormControl,
-	FormDescription,
 	FormField,
 	FormItem,
 	FormLabel,
 	FormMessage,
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
+import { useLoginMutation } from '@/redux/queries/auth.api'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { LogIn } from 'lucide-react'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
+import toast from 'react-hot-toast'
 import { z } from 'zod'
+import Spinner from './Spinner'
 
 const formSchema = z.object({
 	email: z.string().email(),
@@ -22,7 +24,8 @@ const formSchema = z.object({
 		.min(6, { message: 'Password must contain at least 6 character(s)' })
 		.max(20, { message: 'Password must not exceed 20 character(s)' }),
 })
-const LoginForm = () => {
+const LoginForm = ({ setModel }) => {
+	const [login, { isLoading, isSuccess, error }] = useLoginMutation()
 	const form = useForm({
 		resolver: zodResolver(formSchema),
 		defaultValues: {
@@ -30,8 +33,24 @@ const LoginForm = () => {
 			password: '',
 		},
 	})
-	function onSubmit(values) {
-		console.log(values)
+
+	useEffect(() => {
+		if (isSuccess) {
+			toast.success('Login successfully')
+			setModel(false)
+		}
+		if (error) {
+			toast.error(error?.data?.message || 'Login failed')
+		}
+	}, [isSuccess, error])
+
+	async function onSubmit(values) {
+		const body = {
+			email: values.email,
+			password: values.password,
+		}
+
+		await login(body)
 	}
 	return (
 		<Form {...form} className='w-full h-full'>
@@ -79,8 +98,13 @@ const LoginForm = () => {
 					type='submit'
 					className='w-full bg-primary flex gap-2 items-center'
 				>
-					Login
-					<LogIn size={20} />
+					{isLoading ? (
+						<Spinner />
+					) : (
+						<>
+							Login <LogIn size={20} />
+						</>
+					)}
 				</Button>
 			</form>
 		</Form>

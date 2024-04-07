@@ -111,6 +111,11 @@ class UserService {
 		const user = await findUserByEmail(email, { password: true })
 		if (!user) throw new BadRequest('Invalid email or password')
 
+		if (user.isBlocked)
+			throw new BadRequest('User is blocked. Please contact admin.')
+
+		if (!user.isVerified) throw new BadRequest('Please verify your account.')
+
 		const isPasswordMatch = await user.comparePassword(password)
 		if (!isPasswordMatch) throw new BadRequest('Invalid email or password')
 
@@ -201,8 +206,14 @@ class UserService {
 				userInfo: JSON.parse(userInfo),
 			}
 		}
+
+		const user = await findUserByIdAndPopular(userId)
+
+		console.log(user)
+
+		console.log(user)
 		return {
-			userInfo: await findUserById(userId),
+			userInfo: await findUserByIdAndPopular(userId),
 		}
 	}
 
@@ -280,6 +291,7 @@ class UserService {
 		next: NextFunction,
 	) {
 		const { avatar } = body
+		console.log(avatar)
 		const user = await findUserByIdAndPopular(userId)
 
 		if (!user || !avatar) throw new BadRequest('Occuring eror with user.')

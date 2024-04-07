@@ -37,6 +37,8 @@ class UserController {
 
 	async handleRefreshToken(req: Request, res: Response, next: NextFunction) {
 		const userId = req.headers['x-client-id'] as string
+
+		console.log(userId)
 		if (!userId)
 			return next(
 				new Unauthorized('Please provide client id to access resource.'),
@@ -90,6 +92,7 @@ class UserController {
 		res: Response,
 		next: NextFunction,
 	) {
+		console.log('run here')
 		return new OkResponse({
 			metaData: await userService.handleUpdateProfilePictutre(
 				req.user?._id,

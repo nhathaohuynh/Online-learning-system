@@ -7,9 +7,12 @@ export const findUserByEmail = async (
 	options?: { password: boolean },
 ) => {
 	if (options?.password) {
-		return await userModel.findOne({ email }).select('+password')
+		return await userModel
+			.findOne({ email })
+			.select('+password')
+			.populate('avatar')
 	}
-	return await userModel.findOne({ email })
+	return await userModel.findOne({ email }).populate('avatar')
 }
 
 export const createNewUser = async (payload: IRegistrationBody) => {

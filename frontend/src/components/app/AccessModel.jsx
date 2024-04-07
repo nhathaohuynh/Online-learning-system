@@ -1,7 +1,6 @@
-import { ShieldCheck } from 'lucide-react'
+import { ShieldCheck, X } from 'lucide-react'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Button } from '../ui/button'
 import LoginForm from './LoginForm'
 import RegisterForm from './RegisterForm'
 import Verification from './Verification'
@@ -28,33 +27,19 @@ const AccessModel = ({ setModel }) => {
 									<button
 										onClick={() => setModel(false)}
 										type='button'
-										class='end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white'
+										className='end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white'
 										data-modal-hide='authentication-modal'
 									>
-										<svg
-											class='w-3 h-3'
-											aria-hidden='true'
-											xmlns='http://www.w3.org/2000/svg'
-											fill='none'
-											viewBox='0 0 14 14'
-										>
-											<path
-												stroke='currentColor'
-												stroke-linecap='round'
-												stroke-linejoin='round'
-												stroke-width='2'
-												d='m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6'
-											/>
-										</svg>
-										<span class='sr-only'>Close modal</span>
+										<X />
+										<span className='sr-only'>Close modal</span>
 									</button>
 								</div>
-								<LoginForm />
-								<div class='text-sm font-medium text-gray-500 px-5 py-3'>
+								<LoginForm c={setModel} />
+								<div className='text-sm font-medium text-gray-500 px-5 py-3'>
 									Not registered?{' '}
 									<Link
-										class='text-blue-700 hover:underline dark:text-blue-500'
-										onClick={() => setTypeModel('verification')}
+										className='text-blue-700 hover:underline dark:text-blue-500'
+										onClick={() => setTypeModel('register')}
 									>
 										Sign up
 									</Link>
@@ -71,32 +56,17 @@ const AccessModel = ({ setModel }) => {
 									<button
 										onClick={() => setModel(false)}
 										type='button'
-										class='end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white'
-										data-modal-hide='authentication-modal'
+										className='end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white'
 									>
-										<svg
-											class='w-3 h-3'
-											aria-hidden='true'
-											xmlns='http://www.w3.org/2000/svg'
-											fill='none'
-											viewBox='0 0 14 14'
-										>
-											<path
-												stroke='currentColor'
-												stroke-linecap='round'
-												stroke-linejoin='round'
-												stroke-width='2'
-												d='m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6'
-											/>
-										</svg>
-										<span class='sr-only'>Close modal</span>
+										<X />
+										<span className='sr-only'>Close modal</span>
 									</button>
 								</div>
-								<RegisterForm />
-								<div class='text-sm font-medium text-gray-500 px-5 py-3'>
+								<RegisterForm setTypeModel={setTypeModel} />
+								<div className='text-sm font-medium text-gray-500 px-5 py-3'>
 									You hace anccount?{' '}
 									<Link
-										class='text-blue-700 hover:underline dark:text-blue-500'
+										className='text-blue-700 hover:underline dark:text-blue-500'
 										onClick={() => setTypeModel('login')}
 									>
 										Sign in
@@ -114,25 +84,10 @@ const AccessModel = ({ setModel }) => {
 									<button
 										onClick={() => setModel(false)}
 										type='button'
-										class='end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white'
-										data-modal-hide='authentication-modal'
+										className='end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white'
 									>
-										<svg
-											class='w-3 h-3'
-											aria-hidden='true'
-											xmlns='http://www.w3.org/2000/svg'
-											fill='none'
-											viewBox='0 0 14 14'
-										>
-											<path
-												stroke='currentColor'
-												stroke-linecap='round'
-												stroke-linejoin='round'
-												stroke-width='2'
-												d='m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6'
-											/>
-										</svg>
-										<span class='sr-only'>Close modal</span>
+										<X />
+										<span className='sr-only'>Close modal</span>
 									</button>
 								</div>
 								<br />
@@ -142,10 +97,10 @@ const AccessModel = ({ setModel }) => {
 									</div>
 								</div>
 								<div className='px-5'>
-									<Verification />
+									<Verification setTypeModel={setTypeModel} />
 								</div>
 
-								<div class='text-sm font-medium text-gray-500 px-5 py-3'>
+								<div className='text-sm font-medium text-gray-500 px-5 py-3'>
 									Go back sign in?{' '}
 									<Link
 										className='text-blue-700 hover:underline dark:text-blue-500'

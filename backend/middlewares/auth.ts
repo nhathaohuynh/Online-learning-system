@@ -24,11 +24,11 @@ export const isAuthenticated = catchAsyncHandler(
 			userId: string
 		}
 
-		if (decoded.userId !== userId)
-			throw new BadRequest('Can not authorized user.')
-
 		if (!decoded)
-			return next(new BadRequest('Occuring error with access token.'))
+			return next(new Unauthorized('Occuring error with access token.'))
+
+		if (decoded.userId !== userId)
+			throw new Unauthorized('Can not authorized user.')
 
 		if (!user) return next(new Unauthorized('User not found'))
 

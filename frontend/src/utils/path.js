@@ -1,5 +1,6 @@
 const path = {
 	ROOT: '/',
+	PROFILE: 'profile',
 	COURSE: 'course',
 }
 

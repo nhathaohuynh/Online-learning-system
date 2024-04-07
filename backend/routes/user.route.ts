@@ -137,39 +137,6 @@ route.delete(
 )
 
 /**
- * Retrieves user information by ID.
- * @swagger
- * /{id}:
- *   get:
- *     summary: Get user information by ID
- *     tags: [User]
- *     security:
- *       - bearerAuth: []
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         description: User ID
- *         schema:
- *           type: string
- *     responses:
- *       200:
- *         description: User information retrieved successfully
- *       401:
- *         description: Unauthorized access
- *       403:
- *         description: Forbidden access
- *       500:
- *         description: Internal server error
- */
-route.get(
-	'/:id',
-	isAuthenticated,
-	authorizedRoles(env.USER_ROLE as string, env.ADMIN_ROLE as string),
-	asyncHandler(UserController.getUserInfomation),
-)
-
-/**
  * Retrieves all users.
  * @swagger
  * /:
@@ -407,4 +374,36 @@ route.put(
 	asyncHandler(UserController.handleBlockUser),
 )
 
+/**
+ * Retrieves user information by ID.
+ * @swagger
+ * /{id}:
+ *   get:
+ *     summary: Get user information by ID
+ *     tags: [User]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         description: User ID
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: User information retrieved successfully
+ *       401:
+ *         description: Unauthorized access
+ *       403:
+ *         description: Forbidden access
+ *       500:
+ *         description: Internal server error
+ */
+route.get(
+	'/me',
+	isAuthenticated,
+	authorizedRoles(env.USER_ROLE as string, env.ADMIN_ROLE as string),
+	asyncHandler(UserController.getUserInfomation),
+)
 module.exports = route

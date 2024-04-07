@@ -1,9 +1,17 @@
-import React, { useRef, useState } from 'react'
+import { useVerificationMutation } from '@/redux/queries/auth.api'
+import React, { useEffect, useRef, useState } from 'react'
+import toast from 'react-hot-toast'
+import { useSelector } from 'react-redux'
 import { Button } from '../ui/button'
 import { Input } from '../ui/input'
+import Spinner from './Spinner'
 
-const Verification = () => {
+const Verification = ({ setTypeModel }) => {
+	const app = useSelector((state) => state.app)
+
 	const [invalidError, setInvalidError] = useState(false)
+
+	const [verify, { error, isLoading, isSuccess }] = useVerificationMutation()
 
 	const inputRefs = [useRef(null), useRef(null), useRef(null), useRef(null)]
 
@@ -21,7 +29,25 @@ const Verification = () => {
 			setInvalidError(true)
 			return
 		}
+
+		const body = {
+			activationToken: app?.token,
+			activationCode: +verificationNumber,
+		}
+
+		verify(body)
 	}
+
+	useEffect(() => {
+		if (isSuccess) {
+			toast.success('Verification successful')
+			setTypeModel('login')
+		}
+		if (error) {
+			toast.error(error?.data?.message || 'Verification failed')
+			setInvalidError(true)
+		}
+	}, [isSuccess, error])
 
 	const handleInputChange = (index, value) => {
 		if (!/^\d$/.test(value) && value !== '') {
@@ -59,8 +85,12 @@ const Verification = () => {
 				))}
 			</div>
 			<div className='w-full flex justify-center'>
-				<Button onClick={verificationHandler} className='w-full my-4'>
-					Verify OTP
+				<Button
+					onClick={verificationHandler}
+					className='w-full my-4'
+					disabled={isLoading}
+				>
+					{isLoading ? <Spinner /> : 'Verify'}
 				</Button>
 			</div>
 		</div>

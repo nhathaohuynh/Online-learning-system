@@ -1,0 +1,343 @@
+[2024-04-07 06-19-23.425]-info:	201 - Please check your email to activate account!
+[2024-04-07 07-37-09.600]-info:	201 - Please check your email to activate account!
+[2024-04-07 07-51-07.026]-error:	POST - /api/v1/OnlineLS/user/register - 400 - Email already exist
+[2024-04-07 07-51-28.796]-info:	201 - Please check your email to activate account!
+[2024-04-07 07-52-33.586]-info:	201 - Please check your email to activate account!
+[2024-04-07 07-52-46.731]-error:	POST - /api/v1/OnlineLS/user/activate-user - 400 - Required
+[2024-04-07 07-56-32.880]-info:	201 - Please check your email to activate account!
+[2024-04-07 07-58-05.979]-info:	201 - Please check your email to activate account!
+[2024-04-07 08-00-18.786]-info:	201 - Please check your email to activate account!
+[2024-04-07 08-01-54.724]-info:	201 - Please check your email to activate account!
+[2024-04-07 08-02-10.662]-error:	POST - /api/v1/OnlineLS/user/activate-user - 400 - Required
+[2024-04-07 08-03-22.045]-info:	201 - Please check your email to activate account!
+[2024-04-07 08-06-23.405]-info:	201 - Please check your email to activate account!
+[2024-04-07 08-06-35.002]-info:	200 - OK
+[2024-04-07 08-07-33.534]-info:	201 - Please check your email to activate account!
+[2024-04-07 08-07-44.548]-info:	200 - OK
+[2024-04-07 08-10-00.123]-info:	201 - Please check your email to activate account!
+[2024-04-07 08-10-09.801]-info:	200 - OK
+[2024-04-07 08-55-02.971]-info:	201 - Please check your email to activate account!
+[2024-04-07 08-55-07.906]-error:	POST - /api/v1/OnlineLS/user/activate-user - 400 - Invalid activation code
+[2024-04-07 08-55-45.855]-error:	POST - /api/v1/OnlineLS/user/activate-user - 400 - Invalid activation code
+[2024-04-07 08-55-52.677]-error:	POST - /api/v1/OnlineLS/user/activate-user - 400 - Invalid activation code
+[2024-04-07 08-56-20.848]-info:	201 - Please check your email to activate account!
+[2024-04-07 08-56-24.715]-error:	POST - /api/v1/OnlineLS/user/activate-user - 400 - Invalid activation code
+[2024-04-07 08-56-33.560]-error:	POST - /api/v1/OnlineLS/user/activate-user - 400 - Invalid activation code
+[2024-04-07 08-56-40.893]-error:	POST - /api/v1/OnlineLS/user/activate-user - 400 - Invalid activation code
+[2024-04-07 09-00-18.566]-info:	200 - OK
+[2024-04-07 09-10-38.617]-error:	POST - /api/v1/OnlineLS/user/login - 400 - Invalid email or password
+[2024-04-07 09-11-02.263]-error:	POST - /api/v1/OnlineLS/user/login - 400 - Invalid email or password
+[2024-04-07 09-12-21.294]-info:	200 - OK
+[2024-04-07 09-13-31.685]-error:	POST - /api/v1/OnlineLS/user/login - 400 - Invalid email or password
+[2024-04-07 09-13-42.303]-info:	200 - OK
+[2024-04-07 09-15-49.628]-info:	200 - OK
+[2024-04-07 09-17-41.000]-info:	200 - OK
+[2024-04-07 09-25-33.121]-info:	200 - OK
+[2024-04-07 09-26-30.291]-info:	200 - OK
+[2024-04-07 10-08-44.720]-info:	200 - OK
+[2024-04-07 10-09-21.409]-error:	GET - /api/v1/OnlineLS/user - 401 - Not allowed to access resource!
+[2024-04-07 10-11-21.486]-error:	GET - /api/v1/OnlineLS/user - 401 - Not allowed to access resource!
+[2024-04-07 10-11-53.618]-error:	GET - /api/v1/OnlineLS/user - 401 - Not allowed to access resource!
+[2024-04-07 10-14-10.691]-error:	GET - /api/v1/OnlineLS/user - 401 - Please login to access recourse.
+[2024-04-07 10-15-47.481]-error:	GET - /api/v1/OnlineLS/user/refresh - 401 - Please login to access recourse.
+[2024-04-07 10-17-39.460]-error:	GET - /api/v1/OnlineLS/user/refresh - 401 - Please login to access recourse.
+[2024-04-07 10-17-40.660]-error:	GET - /api/v1/OnlineLS/user - 401 - Please login to access recourse.
+[2024-04-07 10-21-00.037]-error:	GET - /api/v1/OnlineLS/user/refresh - 401 - Please login to access recourse.
+[2024-04-07 10-21-01.032]-error:	GET - /api/v1/OnlineLS/user - 401 - Please login to access recourse.
+[2024-04-07 10-21-53.846]-error:	GET - /api/v1/OnlineLS/user/refresh - 401 - Please login to access recourse.
+[2024-04-07 10-21-55.270]-error:	GET - /api/v1/OnlineLS/user - 401 - Please login to access recourse.
+[2024-04-07 10-22-56.995]-error:	GET - /api/v1/OnlineLS/user/refresh - 401 - Please login to access recourse.
+[2024-04-07 10-22-57.490]-error:	GET - /api/v1/OnlineLS/user - 401 - Please login to access recourse.
+[2024-04-07 10-24-49.921]-error:	GET - /api/v1/OnlineLS/user/refresh - 401 - Please login to access recourse.
+[2024-04-07 10-24-50.621]-error:	GET - /api/v1/OnlineLS/user - 401 - Please login to access recourse.
+[2024-04-07 10-26-33.652]-error:	GET - /api/v1/OnlineLS/user/refresh - 401 - Please login to access recourse.
+[2024-04-07 10-26-36.837]-error:	GET - /api/v1/OnlineLS/user - 401 - Please login to access recourse.
+[2024-04-07 10-29-54.193]-error:	GET - /api/v1/OnlineLS/user/refresh - 401 - Please login to access recourse.
+[2024-04-07 10-29-56.278]-error:	GET - /api/v1/OnlineLS/user - 401 - Please login to access recourse.
+[2024-04-07 10-30-39.589]-error:	GET - /api/v1/OnlineLS/user/refresh - 401 - Please login to access recourse.
+[2024-04-07 10-30-40.280]-error:	GET - /api/v1/OnlineLS/user - 401 - Please login to access recourse.
+[2024-04-07 10-32-44.559]-error:	GET - /api/v1/OnlineLS/user/refresh - 401 - Please login to access recourse.
+[2024-04-07 10-32-45.203]-error:	GET - /api/v1/OnlineLS/user - 401 - Please login to access recourse.
+[2024-04-07 10-34-37.280]-error:	GET - /api/v1/OnlineLS/user/refresh - 401 - Please login to access recourse.
+[2024-04-07 10-34-37.840]-error:	GET - /api/v1/OnlineLS/user - 401 - Please login to access recourse.
+[2024-04-07 10-39-57.906]-error:	GET - /api/v1/OnlineLS/user/refresh - 401 - Please login to access recourse.
+[2024-04-07 10-39-58.348]-error:	GET - /api/v1/OnlineLS/user - 401 - Please login to access recourse.
+[2024-04-07 10-41-02.756]-error:	GET - /api/v1/OnlineLS/user/refresh - 401 - Please login to access recourse.
+[2024-04-07 10-41-04.674]-error:	GET - /api/v1/OnlineLS/user - 401 - Please login to access recourse.
+[2024-04-07 10-41-38.888]-error:	GET - /api/v1/OnlineLS/user/refresh - 401 - Please login to access recourse.
+[2024-04-07 10-41-39.310]-error:	GET - /api/v1/OnlineLS/user - 401 - Please login to access recourse.
+[2024-04-07 10-42-19.957]-error:	GET - /api/v1/OnlineLS/user/refresh - 401 - Please login to access recourse.
+[2024-04-07 10-42-20.107]-error:	GET - /api/v1/OnlineLS/user - 401 - Please login to access recourse.
+[2024-04-07 10-42-32.274]-error:	GET - /api/v1/OnlineLS/user/refresh - 401 - Please login to access recourse.
+[2024-04-07 10-43-28.616]-error:	GET - /api/v1/OnlineLS/user/refresh - 401 - Please login to access recourse.
+[2024-04-07 10-43-29.229]-error:	GET - /api/v1/OnlineLS/user - 401 - Please login to access recourse.
+[2024-04-07 10-45-36.236]-error:	GET - /api/v1/OnlineLS/user/refresh - 401 - Please login to access recourse.
+[2024-04-07 10-45-37.502]-error:	GET - /api/v1/OnlineLS/user - 401 - Please login to access recourse.
+[2024-04-07 10-47-22.863]-error:	GET - /api/v1/OnlineLS/user/refresh - 401 - Please login to access recourse.
+[2024-04-07 10-47-24.732]-error:	GET - /api/v1/OnlineLS/user - 401 - Please login to access recourse.
+[2024-04-07 10-48-44.290]-error:	GET - /api/v1/OnlineLS/user/refresh - 401 - Please provide client id to access resource.
+[2024-04-07 10-48-44.852]-error:	GET - /api/v1/OnlineLS/user - 401 - Please login to access recourse.
+[2024-04-07 10-49-22.335]-info:	200 - OK
+[2024-04-07 10-49-24.283]-error:	GET - /api/v1/OnlineLS/user - 401 - Not allowed to access resource!
+[2024-04-07 10-53-44.516]-info:	200 - OK
+[2024-04-07 10-53-47.954]-info:	200 - OK
+[2024-04-07 10-55-27.533]-info:	200 - OK
+[2024-04-07 10-55-29.370]-info:	200 - OK
+[2024-04-07 10-55-32.491]-info:	200 - OK
+[2024-04-07 10-55-33.039]-info:	200 - OK
+[2024-04-07 10-56-32.696]-info:	200 - OK
+[2024-04-07 10-56-32.847]-info:	200 - OK
+[2024-04-07 10-57-01.508]-info:	200 - OK
+[2024-04-07 10-57-03.156]-info:	200 - OK
+[2024-04-07 10-57-06.168]-info:	200 - OK
+[2024-04-07 11-01-31.795]-info:	200 - OK
+[2024-04-07 11-01-59.686]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 11-02-07.211]-info:	200 - OK
+[2024-04-07 11-02-10.179]-info:	200 - OK
+[2024-04-07 11-08-14.854]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 11-08-29.098]-info:	200 - OK
+[2024-04-07 11-08-31.448]-info:	200 - OK
+[2024-04-07 11-28-37.732]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 11-32-01.043]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 11-33-23.522]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 11-34-16.137]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 11-34-24.591]-info:	200 - OK
+[2024-04-07 11-34-30.638]-info:	200 - OK
+[2024-04-07 11-36-07.578]-info:	200 - OK
+[2024-04-07 11-45-57.425]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 11-46-11.131]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 11-57-17.662]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 11-57-28.239]-info:	200 - OK
+[2024-04-07 11-57-33.220]-info:	200 - OK
+[2024-04-07 11-58-36.179]-info:	200 - OK
+[2024-04-07 11-58-38.457]-info:	200 - OK
+[2024-04-07 11-58-41.550]-info:	200 - OK
+[2024-04-07 12-01-11.925]-info:	200 - OK
+[2024-04-07 12-06-49.726]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 12-13-53.714]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 01-33-58.529]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 03-15-17.019]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 03-15-23.588]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 03-59-42.767]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 03-59-56.475]-info:	200 - OK
+[2024-04-07 04-18-22.522]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 04-18-31.599]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 04-18-39.432]-info:	200 - OK
+[2024-04-07 04-21-36.787]-info:	200 - OK
+[2024-04-07 04-26-19.766]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 04-26-33.181]-info:	200 - OK
+[2024-04-07 04-41-55.097]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 04-44-55.362]-info:	200 - OK
+[2024-04-07 04-58-20.793]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 04-58-36.619]-info:	200 - OK
+[2024-04-07 04-59-02.696]-info:	200 - OK
+[2024-04-07 05-20-43.715]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 05-21-13.474]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 05-21-45.973]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 05-25-10.143]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 05-25-39.944]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 05-25-44.280]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 05-27-41.461]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 05-27-50.671]-info:	200 - OK
+[2024-04-07 05-27-53.506]-info:	200 - OK
+[2024-04-07 05-27-59.958]-info:	200 - OK
+[2024-04-07 05-28-03.480]-info:	200 - OK
+[2024-04-07 05-31-53.797]-info:	200 - OK
+[2024-04-07 05-32-02.020]-info:	200 - OK
+[2024-04-07 06-40-27.751]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 06-40-37.853]-info:	200 - OK
+[2024-04-07 06-40-58.852]-info:	200 - OK
+[2024-04-07 06-42-22.821]-info:	200 - OK
+[2024-04-07 06-42-26.899]-info:	200 - OK
+[2024-04-07 07-10-14.804]-error:	DELETE - /api/v1/OnlineLS/user/logout - 401 - Please login to access recourse.
+[2024-04-07 07-10-17.771]-error:	DELETE - /api/v1/OnlineLS/user/logout - 401 - Please login to access recourse.
+[2024-04-07 07-10-19.465]-error:	DELETE - /api/v1/OnlineLS/user/logout - 401 - Please login to access recourse.
+[2024-04-07 07-10-29.089]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 07-11-37.617]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 07-11-52.662]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 07-12-18.568]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 07-12-33.962]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 07-13-19.726]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 07-13-27.212]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 07-13-27.841]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 07-16-14.773]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 07-16-40.751]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 07-17-17.510]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 07-17-39.141]-info:	200 - OK
+[2024-04-07 07-17-42.282]-info:	200 - OK
+[2024-04-07 07-17-42.808]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 07-17-57.851]-info:	200 - OK
+[2024-04-07 07-17-59.655]-error:	DELETE - /api/v1/OnlineLS/user/logout - 401 - Please provide client id to access recourse.
+[2024-04-07 07-18-01.618]-error:	DELETE - /api/v1/OnlineLS/user/logout - 401 - Please provide client id to access recourse.
+[2024-04-07 07-18-04.607]-info:	200 - OK
+[2024-04-07 07-18-05.447]-info:	200 - OK
+[2024-04-07 07-18-07.008]-info:	200 - OK
+[2024-04-07 07-18-07.369]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 07-18-16.535]-info:	200 - OK
+[2024-04-07 07-18-47.461]-error:	DELETE - /api/v1/OnlineLS/user/logout - 401 - Please provide client id to access recourse.
+[2024-04-07 07-18-48.621]-error:	DELETE - /api/v1/OnlineLS/user/logout - 401 - Please provide client id to access recourse.
+[2024-04-07 07-18-53.890]-info:	200 - OK
+[2024-04-07 07-18-54.363]-info:	200 - OK
+[2024-04-07 07-18-57.237]-info:	200 - OK
+[2024-04-07 07-18-57.596]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 07-19-05.044]-info:	200 - OK
+[2024-04-07 07-19-06.551]-error:	DELETE - /api/v1/OnlineLS/user/logout - 401 - Please provide client id to access recourse.
+[2024-04-07 07-19-21.071]-info:	200 - OK
+[2024-04-07 07-19-21.580]-info:	200 - OK
+[2024-04-07 07-19-24.496]-info:	200 - OK
+[2024-04-07 07-19-30.285]-info:	200 - OK
+[2024-04-07 07-19-30.946]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 07-19-35.958]-info:	200 - OK
+[2024-04-07 07-19-42.659]-error:	DELETE - /api/v1/OnlineLS/user/logout - 401 - Please provide client id to access recourse.
+[2024-04-07 07-20-23.295]-error:	GET - /api/v1/OnlineLS/user/logout - 404 - Page not found
+[2024-04-07 07-20-35.518]-error:	DELETE - /api/v1/OnlineLS/user/logout - 401 - Please provide client id to access recourse.
+[2024-04-07 07-21-20.600]-error:	DELETE - /api/v1/OnlineLS/user/logout - 401 - Please provide client id to access recourse.
+[2024-04-07 07-21-54.049]-error:	DELETE - /api/v1/OnlineLS/user/logout - 401 - Please provide client id to access recourse.
+[2024-04-07 07-21-56.327]-info:	200 - OK
+[2024-04-07 07-21-57.782]-info:	200 - OK
+[2024-04-07 07-22-00.645]-info:	200 - OK
+[2024-04-07 07-22-01.342]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 07-22-07.695]-info:	200 - OK
+[2024-04-07 07-22-09.785]-info:	200 - OK
+[2024-04-07 07-22-10.212]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 07-22-18.439]-info:	200 - OK
+[2024-04-07 07-22-33.029]-info:	200 - OK
+[2024-04-07 07-22-34.032]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 07-27-17.578]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 07-28-42.664]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 07-29-03.329]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 07-29-06.360]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 07-29-47.918]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 07-43-22.803]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 09-39-25.403]-error:	GET - /api/v1/OnlineLS/user/refresh - 401 - Please provide client id to access resource.
+[2024-04-07 09-39-25.873]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 09-39-34.505]-info:	200 - OK
+[2024-04-07 09-42-10.445]-error:	POST - /api/v1/OnlineLS/user/change-password - 404 - Page not found
+[2024-04-07 09-42-55.237]-error:	POST - /api/v1/OnlineLS/user/change-password - 404 - Page not found
+[2024-04-07 09-43-01.816]-error:	POST - /api/v1/OnlineLS/user/change-password - 404 - Page not found
+[2024-04-07 09-43-53.709]-error:	POST - /api/v1/OnlineLS/user/change-password - 404 - Page not found
+[2024-04-07 09-44-01.069]-info:	200 - OK
+[2024-04-07 09-44-02.219]-info:	200 - OK
+[2024-04-07 09-44-02.439]-info:	200 - OK
+[2024-04-07 09-44-23.343]-error:	PUT - /api/v1/OnlineLS/user/change-password - 400 - Invalid old password.
+[2024-04-07 09-44-44.126]-error:	PUT - /api/v1/OnlineLS/user/change-password - 400 - Invalid old password.
+[2024-04-07 09-45-46.226]-error:	PUT - /api/v1/OnlineLS/user/change-password - 400 - Required
+[2024-04-07 09-45-50.097]-info:	200 - OK
+[2024-04-07 09-45-50.949]-info:	200 - OK
+[2024-04-07 09-45-51.043]-info:	200 - OK
+[2024-04-07 09-45-57.860]-error:	PUT - /api/v1/OnlineLS/user/change-password - 400 - Required
+[2024-04-07 09-46-07.859]-error:	PUT - /api/v1/OnlineLS/user/change-password - 400 - Required
+[2024-04-07 09-46-37.655]-info:	200 - OK
+[2024-04-07 09-46-38.489]-info:	200 - OK
+[2024-04-07 09-46-38.604]-info:	200 - OK
+[2024-04-07 09-46-49.063]-info:	200 - OK
+[2024-04-07 09-47-05.776]-error:	PUT - /api/v1/OnlineLS/user/change-password - 400 - Invalid old password.
+[2024-04-07 09-48-05.836]-error:	PUT - /api/v1/OnlineLS/user/change-password - 400 - Invalid old password.
+[2024-04-07 09-49-30.297]-info:	200 - OK
+[2024-04-07 09-49-31.062]-info:	200 - OK
+[2024-04-07 09-49-31.463]-info:	200 - OK
+[2024-04-07 09-51-52.647]-info:	200 - OK
+[2024-04-07 09-59-58.207]-info:	200 - OK
+[2024-04-07 09-59-59.918]-info:	200 - OK
+[2024-04-07 10-00-00.570]-info:	200 - OK
+[2024-04-07 10-00-21.267]-error:	PUT - /api/v1/OnlineLS/user - 400 - Required
+[2024-04-07 10-00-53.951]-error:	PUT - /api/v1/OnlineLS/user - 400 - Required
+[2024-04-07 10-01-27.773]-error:	PUT - /api/v1/OnlineLS/user - 400 - Required
+[2024-04-07 10-02-55.582]-info:	200 - OK
+[2024-04-07 10-03-00.731]-info:	200 - OK
+[2024-04-07 10-03-01.375]-info:	200 - OK
+[2024-04-07 10-03-01.710]-info:	200 - OK
+[2024-04-07 10-03-13.133]-info:	200 - OK
+[2024-04-07 10-03-13.269]-info:	200 - OK
+[2024-04-07 10-10-20.260]-error:	PUT - /api/v1/OnlineLS/user - 401 - Please login to access recourse.
+[2024-04-07 10-10-28.977]-info:	200 - OK
+[2024-04-07 10-10-29.736]-info:	200 - OK
+[2024-04-07 10-10-29.885]-info:	200 - OK
+[2024-04-07 10-10-34.766]-error:	PUT - /api/v1/OnlineLS/user/update-avatar - 400 - Required
+[2024-04-07 10-12-20.151]-info:	200 - OK
+[2024-04-07 10-12-20.294]-error:	GET - /api/v1/OnlineLS/user/refresh - 400 - invalid signature
+[2024-04-07 10-12-20.650]-error:	GET - /api/v1/OnlineLS/user/me - 500 - invalid signature
+[2024-04-07 10-12-24.188]-error:	GET - /api/v1/OnlineLS/user/refresh - 400 - invalid signature
+[2024-04-07 10-12-24.391]-error:	GET - /api/v1/OnlineLS/user/me - 500 - invalid signature
+[2024-04-07 10-12-32.681]-info:	200 - OK
+[2024-04-07 10-12-37.566]-error:	PUT - /api/v1/OnlineLS/user/update-avatar - 400 - Occuring eror with user.
+[2024-04-07 10-13-03.273]-info:	200 - OK
+[2024-04-07 10-13-03.753]-info:	200 - OK
+[2024-04-07 10-13-03.985]-info:	200 - OK
+[2024-04-07 10-13-08.013]-error:	PUT - /api/v1/OnlineLS/user/update-avatar - 400 - Occuring eror with user.
+[2024-04-07 10-14-00.549]-error:	GET - /api/v1/OnlineLS/user/update-avatar - 404 - Page not found
+[2024-04-07 10-15-39.264]-info:	200 - OK
+[2024-04-07 10-15-39.819]-info:	200 - OK
+[2024-04-07 10-15-40.235]-info:	200 - OK
+[2024-04-07 10-15-46.668]-error:	PUT - /api/v1/OnlineLS/user/update-avatar - 400 - Occuring eror with user.
+[2024-04-07 10-15-57.754]-info:	200 - OK
+[2024-04-07 10-15-58.150]-info:	200 - OK
+[2024-04-07 10-15-58.312]-info:	200 - OK
+[2024-04-07 10-16-03.219]-error:	PUT - /api/v1/OnlineLS/user/update-avatar - 400 - Occuring eror with user.
+[2024-04-07 10-16-58.608]-error:	GET - /api/v1/OnlineLS/user/update-avatar - 404 - Page not found
+[2024-04-07 10-17-10.892]-error:	PUT - /api/v1/OnlineLS/user/update-avatar - 400 - Occuring eror with user.
+[2024-04-07 10-18-11.057]-info:	200 - OK
+[2024-04-07 10-18-13.054]-error:	GET - /api/v1/OnlineLS/user/refresh - 400 - invalid signature
+[2024-04-07 10-18-13.738]-error:	GET - /api/v1/OnlineLS/user/me - 500 - invalid signature
+[2024-04-07 10-18-31.840]-info:	200 - OK
+[2024-04-07 10-18-37.328]-error:	PUT - /api/v1/OnlineLS/user/update-avatar - 400 - Occuring eror with user.
+[2024-04-07 10-20-20.717]-info:	200 - OK
+[2024-04-07 10-20-23.072]-info:	200 - OK
+[2024-04-07 10-20-23.956]-info:	200 - OK
+[2024-04-07 10-20-29.736]-error:	PUT - /api/v1/OnlineLS/user/update-avatar - 400 - Occuring eror with user.
+[2024-04-07 10-21-39.403]-info:	200 - OK
+[2024-04-07 10-21-41.150]-info:	200 - OK
+[2024-04-07 10-21-41.996]-info:	200 - OK
+[2024-04-07 10-21-57.477]-info:	200 - OK
+[2024-04-07 10-25-30.584]-info:	200 - OK
+[2024-04-07 10-25-31.833]-info:	200 - OK
+[2024-04-07 10-25-33.637]-info:	200 - OK
+[2024-04-07 10-25-53.276]-info:	200 - OK
+[2024-04-07 10-25-58.207]-info:	200 - OK
+[2024-04-07 10-25-59.108]-info:	200 - OK
+[2024-04-07 10-25-59.245]-info:	200 - OK
+[2024-04-07 10-29-46.333]-info:	200 - OK
+[2024-04-07 10-29-46.959]-info:	200 - OK
+[2024-04-07 10-29-47.389]-info:	200 - OK
+[2024-04-07 10-30-52.908]-info:	200 - OK
+[2024-04-07 10-30-52.970]-error:	GET - /api/v1/OnlineLS/user/me - 401 - User not found
+[2024-04-07 10-31-03.785]-info:	200 - OK
+[2024-04-07 10-33-46.859]-info:	200 - OK
+[2024-04-07 10-33-46.944]-error:	GET - /api/v1/OnlineLS/user/me - 401 - User not found
+[2024-04-07 10-33-53.465]-info:	200 - OK
+[2024-04-07 10-34-22.372]-info:	200 - OK
+[2024-04-07 10-34-23.113]-info:	200 - OK
+[2024-04-07 10-37-30.591]-info:	200 - OK
+[2024-04-07 10-37-30.872]-error:	GET - /api/v1/OnlineLS/user/me - 401 - User not found
+[2024-04-07 10-37-41.731]-info:	200 - OK
+[2024-04-07 10-39-08.017]-info:	200 - OK
+[2024-04-07 10-39-08.125]-error:	GET - /api/v1/OnlineLS/user/me - 401 - User not found
+[2024-04-07 10-39-15.777]-info:	200 - OK
+[2024-04-07 10-39-40.524]-info:	200 - OK
+[2024-04-07 10-39-40.706]-info:	200 - OK
+[2024-04-07 10-40-01.570]-info:	200 - OK
+[2024-04-07 10-40-01.777]-error:	GET - /api/v1/OnlineLS/user/me - 401 - User not found
+[2024-04-07 10-41-16.261]-info:	200 - OK
+[2024-04-07 10-41-16.430]-error:	GET - /api/v1/OnlineLS/user/me - 401 - User not found
+[2024-04-07 10-41-29.513]-info:	200 - OK
+[2024-04-07 10-46-12.408]-info:	200 - OK
+[2024-04-07 10-46-21.437]-info:	200 - OK
+[2024-04-07 10-46-22.035]-info:	200 - OK
+[2024-04-07 10-46-22.256]-info:	200 - OK
+[2024-04-07 10-46-41.719]-info:	200 - OK
+[2024-04-07 10-46-42.531]-error:	GET - /api/v1/OnlineLS/user/refresh - 401 - Please provide client id to access resource.
+[2024-04-07 10-46-42.738]-error:	GET - /api/v1/OnlineLS/user/me - 401 - Please login to access recourse.
+[2024-04-07 10-47-01.220]-info:	200 - OK
+[2024-04-07 10-47-44.784]-info:	200 - OK
+[2024-04-07 10-47-45.324]-info:	200 - OK
+[2024-04-07 10-47-45.611]-info:	200 - OK
+[2024-04-07 10-47-57.675]-info:	200 - OK
+[2024-04-07 10-48-10.963]-info:	200 - OK
+[2024-04-07 10-48-11.542]-info:	200 - OK
+[2024-04-07 10-48-11.761]-info:	200 - OK
+[2024-04-07 10-49-02.761]-info:	200 - OK
+[2024-04-07 10-49-03.196]-info:	200 - OK
+[2024-04-07 10-49-03.366]-error:	GET - /api/v1/OnlineLS/user/me - 401 - User not found
+[2024-04-07 10-49-10.125]-info:	200 - OK
+[2024-04-07 10-49-30.935]-info:	200 - OK
+[2024-04-07 10-49-31.113]-info:	200 - OK

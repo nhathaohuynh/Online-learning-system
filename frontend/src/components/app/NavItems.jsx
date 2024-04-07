@@ -39,18 +39,17 @@ const NavItems = ({ activeItem }) => {
 					<NavigationMenuList>
 						{navItemsData &&
 							navItemsData.map((i, index) => (
-								<NavigationMenuItem>
-									<Link to={`${i.url}`} key={crypto.randomUUID()}>
-										<NavigationMenuLink
-											className={`${
-												activeItem === index
-													? ' text-red-500'
-													: ' text-primary-foreground'
-											} text-[18px] px-6 font-Poppins font-[400] list-none transition-all duration-300 transform hover:scale-110 hover:text-red-500`}
-										>
-											{i.name}
-										</NavigationMenuLink>
-									</Link>
+								<NavigationMenuItem key={crypto.randomUUID()}>
+									<NavigationMenuLink
+										href={`${i.url}`}
+										className={`${
+											activeItem === index
+												? ' text-red-500'
+												: ' text-primary-foreground'
+										} text-[18px] px-6 font-Poppins font-[400] list-none transition-all duration-300 transform hover:scale-110 hover:text-red-500`}
+									>
+										{i.name}
+									</NavigationMenuLink>
 								</NavigationMenuItem>
 							))}
 					</NavigationMenuList>
