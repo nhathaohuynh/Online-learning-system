@@ -10,6 +10,7 @@ const validate =
 			})
 			return next()
 		} catch (err: any) {
+			console.log(err)
 			return next(new BadRequest(err.errors[0].message))
 		}
 	}

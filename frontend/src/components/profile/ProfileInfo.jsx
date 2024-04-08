@@ -1,4 +1,3 @@
-import { useLoadUserQuery } from '@/redux/queries/app.api'
 import {
 	useUpdateAvatarMutation,
 	useUpdateProfileMutation,
@@ -6,24 +5,30 @@ import {
 import { Camera } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
 import toast from 'react-hot-toast'
+import { useSelector } from 'react-redux'
 import avatar from '../../assets/avatar.png'
 import Spinner from '../app/Spinner'
 import { Button } from '../ui/button'
 import { Input } from '../ui/input'
+import { Skeleton } from '../ui/skeleton'
 
-const ProfileInfo = ({ user }) => {
-	const [updateAvatar, { isSuccess: avatarSuccess, error: avatarError }] =
-		useUpdateAvatarMutation()
+const ProfileInfo = () => {
+	const user = useSelector((state) => state.app?.user)
+	const [
+		updateAvatar,
+		{
+			isSuccess: avatarSuccess,
+			error: avatarError,
+			isLoading: loadingUpdateAvatar,
+		},
+	] = useUpdateAvatarMutation()
 
-	const [loadUser, setLoadUser] = useState(false)
-	const {} = useLoadUserQuery(undefined, { skip: loadUser ? false : true })
 	const imageHandler = async (e) => {
 		const fileReader = new FileReader()
 
 		fileReader.onload = () => {
 			if (fileReader.readyState === 2) {
 				const avatar = fileReader.result
-				console.log(avatar)
 				const body = {
 					avatar,
 				}
@@ -49,9 +54,9 @@ const ProfileInfo = ({ user }) => {
 
 		await updateProfile(body)
 	}
+
 	useEffect(() => {
-		if (isSuccess) {
-			setLoadUser(true)
+		if (avatarSuccess) {
 			toast.success('Avatar updated successfully')
 		}
 		if (avatarError) {
@@ -71,11 +76,17 @@ const ProfileInfo = ({ user }) => {
 		<div>
 			<div className='w-full flex justify-center'>
 				<div className='relative'>
-					<img
-						src={user?.avatar ? user?.avatar?.url : avatar}
-						alt='Avatar'
-						className='rounded-full'
-					/>
+					{loadingUpdateAvatar ? (
+						<div>
+							<Skeleton className='w-[120px] h-[120px] rounded-full' />
+						</div>
+					) : (
+						<img
+							src={user?.avatar ? user?.avatar?.url : avatar}
+							alt='Avatar'
+							className='rounded-full w-[120px] h-[120px] object-cover'
+						/>
+					)}
 					<Input
 						type='file'
 						name=''

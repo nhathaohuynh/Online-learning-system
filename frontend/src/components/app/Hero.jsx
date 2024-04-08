@@ -1,5 +1,4 @@
 import path from '@/utils/path'
-import { Search } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import bannder from '../../assets/banner-img-1.png'
 import image1 from '../../assets/client-1.jpg'

@@ -92,7 +92,6 @@ class UserController {
 		res: Response,
 		next: NextFunction,
 	) {
-		console.log('run here')
 		return new OkResponse({
 			metaData: await userService.handleUpdateProfilePictutre(
 				req.user?._id,

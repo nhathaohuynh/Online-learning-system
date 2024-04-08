@@ -209,11 +209,8 @@ class UserService {
 
 		const user = await findUserByIdAndPopular(userId)
 
-		console.log(user)
-
-		console.log(user)
 		return {
-			userInfo: await findUserByIdAndPopular(userId),
+			userInfo: user,
 		}
 	}
 
@@ -291,7 +288,7 @@ class UserService {
 		next: NextFunction,
 	) {
 		const { avatar } = body
-		console.log(avatar)
+
 		const user = await findUserByIdAndPopular(userId)
 
 		if (!user || !avatar) throw new BadRequest('Occuring eror with user.')
@@ -314,14 +311,15 @@ class UserService {
 			const picture = await createNewPicture(payload)
 
 			await findUserByIdAndUpdateAvatar(userId, { avatar: picture._id })
+			const data = { ...user, avatar: picture }
 
-			await redis.set(userId, JSON.stringify({ ...user, avatar: picture._id }))
+			await redis.set(userId, JSON.stringify(data))
+
+			return {
+				userInfo: data,
+			}
 		} catch (err: any) {
 			return next(new BadRequest(err.message))
-		}
-
-		return {
-			userId,
 		}
 	}
 

@@ -39,6 +39,7 @@ const courseSchema: Schema<ICourse> = new mongoose.Schema<ICourse>(
 			type: Number,
 			required: true,
 		},
+
 		estimatedPrice: Number,
 
 		thumbnail: {

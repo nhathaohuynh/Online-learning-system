@@ -9,14 +9,16 @@ import {
 	DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 
-export function ModeToggle() {
+export function ModeToggle({ admin }) {
 	const { setTheme } = useTheme()
 
 	return (
 		<Button
 			variant='outline'
 			size='icon'
-			className='bg-primary border-none'
+			className={`${
+				admin ? 'bg-primary-foreground' : 'bg-primary'
+			} border-none`}
 			onClick={() => {
 				setTheme(
 					window.localStorage.getItem('vite-ui-theme') === 'light'

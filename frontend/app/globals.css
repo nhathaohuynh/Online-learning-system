@@ -74,3 +74,150 @@
 		@apply bg-background text-foreground;
 	}
 }
+
+.hero_animation {
+	background-image: linear-gradient(
+		147.92deg,
+		hsla(239, 76%, 53%, 0.456) 10.41%,
+		hsla(0, 0%, 100%, 0) 89.25%
+	);
+	-webkit-animation: changeBackgroundColor 8s infinite alternate;
+	animation: changeBackgroundColor 8s infinite alternate;
+}
+
+@-webkit-keyframes changeBackgroundColor {
+	0%,
+	100% {
+		opacity: 1;
+	}
+	16.67% {
+		opacity: 0.9;
+	}
+	33.33% {
+		opacity: 0.8;
+	}
+	50% {
+		opacity: 0.6;
+	}
+	66.67% {
+		opacity: 0.5;
+	}
+	83.33% {
+		opacity: 0.4;
+	}
+}
+
+@keyframes changeBackgroundColor {
+	0%,
+	100% {
+		opacity: 1;
+	}
+	16.67% {
+		opacity: 0.9;
+	}
+	33.33% {
+		opacity: 0.8;
+	}
+	50% {
+		opacity: 0.6;
+	}
+	66.67% {
+		opacity: 0.5;
+	}
+	83.33% {
+		opacity: 0.4;
+	}
+}
+
+@-webkit-keyframes shake {
+	0% {
+		transform: translateX(0);
+	}
+	20% {
+		transform: translateX(-2px);
+	}
+	40% {
+		transform: translateX(2px);
+	}
+	60% {
+		transform: translateX(-2px);
+	}
+	80% {
+		transform: translateX(2px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes shake {
+	0% {
+		transform: translateX(0);
+	}
+	20% {
+		transform: translateX(-2px);
+	}
+	40% {
+		transform: translateX(2px);
+	}
+	60% {
+		transform: translateX(-2px);
+	}
+	80% {
+		transform: translateX(2px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.shake {
+	-webkit-animation: shake 0.5s ease-in-out;
+	animation: shake 0.5s ease-in-out;
+}
+
+.css-dip3t8 {
+	background: unset !important;
+}
+.ps-menu-button:hover {
+	background: unset !important;
+}
+
+/* li.ps-menuitem-root.ps-active :hover {
+	color: #868dfb !important;
+} */
+
+a.ps-menu-button.ps-active > .ps-menu-label {
+	color: #6870fa !important;
+}
+
+::-webkit-scrollbar {
+	height: 100px;
+	width: 50%;
+	overflow: auto;
+	padding: 0 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background-color: #e7e7e7;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background: linear-gradient(
+		180deg,
+		rgba(63, 94, 251, 1) 0%,
+		rgba(13, 32, 212, 1) 51%
+	);
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+}
+
+/* class="ps-menu-icon ps-active css-wx7wi4" */
+
+/* ps-menu-label ps-active css-12w9als */
+/* ps-menuitem-root ps-active hover:!bg-[unset] text-primary css-1654oxyps-activehover */

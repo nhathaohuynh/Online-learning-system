@@ -31,12 +31,6 @@ class CourseController {
 		}).send(res)
 	}
 
-	async getAllCourse(req: Request, res: Response, next: NextFunction) {
-		return new OkResponse({
-			metaData: await courseService.getAllCourse(),
-		}).send(res)
-	}
-
 	async getCourseValidUser(req: Request, res: Response, next: NextFunction) {
 		return new OkResponse({
 			metaData: await courseService.getCourseValidUser(

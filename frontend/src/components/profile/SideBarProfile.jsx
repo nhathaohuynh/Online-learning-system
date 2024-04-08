@@ -41,16 +41,16 @@ const SideBarProfile = ({ user, active, setActive, logOutHandler }) => {
 				<h5 className='pl-2'>Enrolled Courses</h5>
 			</div>
 
-			{user.role === 'admin' && (
+			{user.role === '1111' && (
 				<div>
 					<Link
-						className={` flex items-center hover:bg-blue-500 text-white rounded-md px-3 py-4 cursor-pointer ${
+						className={`flex items-center hover:bg-blue-500 text-white rounded-md px-3 py-4 cursor-pointer ${
 							active === 6 && 'bg-blue-500 transition-all'
 						}`}
 						to={'/admin'}
 					>
-						<Settings className='text-primary-foreground' />
-						<h5 className='pl-2 text-primary-foreground'>Admin Dashboard</h5>
+						<Settings className='text-white' />
+						<h5 className='pl-2 text-white'>Admin Dashboard</h5>
 					</Link>
 				</div>
 			)}

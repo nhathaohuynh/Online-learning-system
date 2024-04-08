@@ -34,7 +34,7 @@ const AccessModel = ({ setModel }) => {
 										<span className='sr-only'>Close modal</span>
 									</button>
 								</div>
-								<LoginForm c={setModel} />
+								<LoginForm setModel={setModel} />
 								<div className='text-sm font-medium text-gray-500 px-5 py-3'>
 									Not registered?{' '}
 									<Link

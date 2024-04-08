@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import { userLoggedIn, userRegistration } from '../slices/app.slice'
+import { setUser, userLoggedIn, userRegistration } from '../slices/app.slice'
 import { appApi } from './app.api'
 
 export const authApi = appApi.injectEndpoints({
@@ -134,6 +134,20 @@ export const authApi = appApi.injectEndpoints({
 					'x-client-id': JSON.parse(window.localStorage.getItem('_id')) || '',
 				},
 			}),
+			async onQueryStarted(arg, { dispatch, queryFulfilled }) {
+				try {
+					const { data } = await queryFulfilled
+
+					console.log(data)
+					dispatch(
+						setUser({
+							user: data?.metaData?.userInfo,
+						}),
+					)
+				} catch (error) {
+					console.log(error)
+				}
+			},
 		}),
 	}),
 })
