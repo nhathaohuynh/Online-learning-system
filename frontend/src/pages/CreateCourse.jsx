@@ -3,7 +3,7 @@ import CourseData from '@/components/admin/CourseData'
 import CourseInformation from '@/components/admin/CourseInfomation'
 import CourseOptions from '@/components/admin/CourseOptions'
 import CoursePreview from '@/components/admin/CoursePreview'
-import { usePublishCourseMutation } from '@/redux/queries/course'
+import { usePublishCourseMutation } from '@/redux/queries/adminApi'
 import { useEffect, useState } from 'react'
 import { toast } from 'react-hot-toast'
 

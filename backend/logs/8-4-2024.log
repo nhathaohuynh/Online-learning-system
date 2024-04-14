@@ -176,3 +176,13 @@
 [2024-04-08 08-46-49.358]-info:	200 - OK
 [2024-04-08 08-46-49.788]-info:	200 - OK
 [2024-04-08 08-50-43.839]-error:	POST - /api/v1/OnlineLS/course - 400 - Required
+[2024-04-08 08-53-51.923]-error:	POST - /api/v1/OnlineLS/course - 401 - Please login to access recourse.
+[2024-04-08 08-53-58.943]-info:	200 - OK
+[2024-04-08 08-53-59.747]-info:	200 - OK
+[2024-04-08 09-01-29.540]-error:	POST - /api/v1/OnlineLS/course - 401 - Please login to access recourse.
+[2024-04-08 09-01-45.479]-info:	200 - OK
+[2024-04-08 09-01-46.214]-info:	200 - OK
+[2024-04-08 09-04-08.087]-error:	POST - /api/v1/OnlineLS/course - 400 - Required
+[2024-04-08 09-06-25.247]-info:	200 - OK
+[2024-04-08 09-06-25.831]-info:	200 - OK
+[2024-04-08 09-08-39.187]-info:	201 - Created

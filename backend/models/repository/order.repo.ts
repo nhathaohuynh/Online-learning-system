@@ -6,5 +6,5 @@ export const insertOrder = async (payload: IBodyOrder & { userId: string }) => {
 }
 
 export const findAllOrders = async () => {
-	return await orderModel.find().lean()
+	return await orderModel.find({}).populate('userId')
 }

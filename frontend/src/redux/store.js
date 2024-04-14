@@ -1,12 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { setupListeners } from '@reduxjs/toolkit/query'
 import { appApi } from './queries/app.api'
+import adminSlice from './slices/admin.slice'
 import appSlice from './slices/app.slice'
 
 export const store = configureStore({
 	reducer: {
 		[appApi.reducerPath]: appApi.reducer,
 		app: appSlice,
+		adminData: adminSlice,
 	},
 	middleware: (getDefaultMiddleware) =>
 		getDefaultMiddleware().concat(appApi.middleware),

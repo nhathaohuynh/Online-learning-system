@@ -24,16 +24,17 @@ import { Button } from '../ui/button'
 import { FolderKanban } from 'lucide-react'
 const Item = ({ title, to, icon, selected = 'Dashboard', setSelected }) => {
 	return (
-		<Link to={to} className='hover:!bg-[unset] flex gap-2'>
-			<MenuItem
-				active={selected === title}
-				onClick={() => setSelected(title)}
-				icon={icon}
-				className='hover:!bg-[unset]'
-			>
+		<MenuItem
+			active={selected === title}
+			onClick={() => setSelected(title)}
+			href={to}
+			icon={icon}
+			className='hover:!bg-[unset]'
+		>
+			<Link to={to} className='hover:!bg-[unset] flex gap-2'>
 				<span className='!text-[16px] !font-Poppins'>{title}</span>
-			</MenuItem>
-		</Link>
+			</Link>
+		</MenuItem>
 	)
 }
 
@@ -180,36 +181,6 @@ const AdminSidebar = () => {
 							title='Categories'
 							to='/admin/categories'
 							icon={<WysiwygIcon className='text-black dark:text-white' />}
-							selected={selected}
-							setSelected={setSelected}
-						/>
-
-						<h6 className='!text-[18px] text-primary capitalize !font-[400] mt-[15px] ml-[5px] mr-[20px]'>
-							{!isCollapsed && 'Analytics'}
-						</h6>
-						<Item
-							title='Courses Analytics'
-							to='/admin/courses-analytics'
-							icon={
-								<BarChartOutlinedIcon className='text-black dark:text-white' />
-							}
-							selected={selected}
-							setSelected={setSelected}
-						/>
-						<Item
-							title='Orders Analytics'
-							to='/admin/orders-analytics'
-							icon={<MapOutlinedIcon className='text-black dark:text-white' />}
-							selected={selected}
-							setSelected={setSelected}
-						/>
-
-						<Item
-							title='Users Analytics'
-							to='/admin/users-analytics'
-							icon={
-								<ManageHistoryIcon className='text-black dark:text-white' />
-							}
 							selected={selected}
 							setSelected={setSelected}
 						/>

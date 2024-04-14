@@ -29,7 +29,7 @@ export const findCourseByIdAndUpdate = async (
 
 export const findAllCourseAndPopulate = async (excludeFields: string) => {
 	return await courseModel
-		.findOne()
+		.find({})
 		.populate('thumbnail')
 		.populate('dataCourse', excludeFields)
 		.lean()

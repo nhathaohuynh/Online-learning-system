@@ -25,6 +25,8 @@ export const courseSchema = z.object({
 	}),
 })
 
+
+
 export const editCourseSchema = z.object({
 	body: z.object({
 		name: z.string().optional(),

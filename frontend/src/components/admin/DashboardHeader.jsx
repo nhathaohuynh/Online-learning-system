@@ -6,7 +6,7 @@ import React, { useEffect, useState } from 'react'
 
 const DashboardHeader = ({ open, setOpen }) => {
 	return (
-		<div className='w-full flex items-center justify-end p-6 fixed top-5 right-0 z-[9999999]'>
+		<div className='w-full flex items-center justify-end p-1 fixed top-2 right-0 z-[9999999]'>
 			<ModeToggle admin />
 			<div
 				className='relative cursor-pointer m-2'
